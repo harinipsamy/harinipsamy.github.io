@@ -67,7 +67,7 @@ author:
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
 #      url: "https://"
-    - label: "LinkedIN"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/harinipalanisamy"
     - label: "GitHub"
