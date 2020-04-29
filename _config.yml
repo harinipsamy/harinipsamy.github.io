@@ -18,9 +18,9 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning intertwines my life as a Data Scientist by day and Investor by night 
   - I strive to document my adventures in data science and trading/investing using Machine 
-  learning techniques and my learning in this space.</p>
+  learning techniques and my learning in this space.
 
-twitter_username: username
+#twitter_username: username
 github_username: harinipsamy
 minimal_mistakes_skin: default
 search: true
@@ -64,30 +64,30 @@ author:
   bio    : "Machine Learning intertwines my life as a Data Scientist by day and Investor by night - I strive to document my adventures in data science and trading/investing using Machine learning techniques and my learning in this space.</p>
               "
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://"
     - label: "LinkedIN"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://twitter.com/"
+      url: "https://linkedin.com/in/harinipalanisamy"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/harinipsamy"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+#     - label: "Instagram"
+#       icon: "fab fa-fw fa-instagram"
+#       url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/harinipalanisamy"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/harinipsamy"
+#     - label: "Instagram"
+#       icon: "fab fa-fw fa-instagram"
+#       url: "https://instagram.com/"
 
 defaults:
   # _posts
