@@ -15,7 +15,7 @@ II. calculations/adjustments
 4. Distribution of prices and returns
 
 # Stock returns
-Stock returns are calculated as ''' r = (Pt - Pt-1)/Pt-1 '''
+Stock returns are calculated as ` r = (Pt - Pt-1)/Pt-1 `
 log return or natural log return R = ln(Pt/Pt-1)
 If the value of r is small (|r| <<1 , ln(r+1) ~ r
 
@@ -33,12 +33,12 @@ np.prod(1/np.array(range(1,1000))) #gives 0.0
 sum(np.log(1/np.array(range(1,1000)))) #gives -5905.2204..
 '''
 
-''' ruby
+` ruby
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
-'''
+`
 
 * Additive:
 Products turn to addition problem in log, which is easier for computing purposes. Also, product of two normally distributed variables is not normal, whereas the addition of two normally distributed variables also result in a normally distributed variable.
