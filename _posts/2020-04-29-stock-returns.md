@@ -20,7 +20,7 @@ If the value of r is small (|r| <<1 , ln(r+1) ~ r
 
 why log returns?
 * Numerical stability:
-```python
+```ruby
 np.prod(1/np.array(range(1,1000))) #gives 0.0
 sum(np.log(1/np.array(range(1,1000)))) #gives -5905.2204..
 
