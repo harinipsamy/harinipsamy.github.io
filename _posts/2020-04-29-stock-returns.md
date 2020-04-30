@@ -26,11 +26,20 @@ log returns are also continuosly compounded returns.
 
 
 * Numerical stability:
+
 ```ruby
 np.prod(1/np.array(range(1,1000))) #gives 0.0
 sum(np.log(1/np.array(range(1,1000)))) #gives -5905.2204..
 
 ```
+
+''' ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+'''
+
 * Additive:
 Products turn to addition problem in log, which is easier for computing purposes. Also, product of two normally distributed variables is not normal, whereas the addition of two normally distributed variables also result in a normally distributed variable.
 
