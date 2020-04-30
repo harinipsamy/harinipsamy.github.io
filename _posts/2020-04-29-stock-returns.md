@@ -15,7 +15,7 @@ II. calculations/adjustments
 4. Distribution of prices and returns
 
 # Stock returns
-Stock returns are calculated as r = (Pt - Pt-1)/Pt-1
+Stock returns are calculated as ''' r = (Pt - Pt-1)/Pt-1 '''
 log return or natural log return R = ln(Pt/Pt-1)
 If the value of r is small (|r| <<1 , ln(r+1) ~ r
 
