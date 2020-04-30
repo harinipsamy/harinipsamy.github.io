@@ -28,7 +28,7 @@ log returns are also continuosly compounded returns.
 
 * Numerical stability:
 
-    ```ruby
+    ```python
     np.prod(1/np.array(range(1,1000))) #gives 0.0
     sum(np.log(1/np.array(range(1,1000)))) #gives -5905.2204..
     ```
