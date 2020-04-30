@@ -32,8 +32,9 @@ sum(np.log(1/np.array(range(1,1000)))) #gives -5905.2204..
 
 ```
 * Additive:
-Products turn to addition problem in log, which is easier for computing purposes
+Products turn to addition problem in log, which is easier for computing purposes. Also, product of two normally distributed variables is not normal, whereas the addition of two normally distributed variables also result in a normally distributed variable.
 
 * Normally distributed:
-log returns of a stock can reasonably be considered as normally distributed
+log returns of a stock can reasonably be considered as normally distributed as long as they are identically and independantly distributed
+
 
