@@ -15,6 +15,6 @@ sample standard deviation: <img src="https://render.githubusercontent.com/render
 standard error: <img src="https://render.githubusercontent.com/render/math?math=\frac {sample%20 standard%20 deviation}{\sqrt{n}} ">
 
 t-test: testing the null hypothesis that the population mean is 0.
-<img src=https://render.githubusercontent.com/render/math?math=t%20=%20\frac%20{x-\mu}{sample%20SD_{\overline%20{x}}}">
+<img src="https://render.githubusercontent.com/render/math?math=t%20=%20\frac%20{x-\mu}{sample%20SD_{\overline%20{x}}}">
 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i%20\pi}%20=%20-1">
