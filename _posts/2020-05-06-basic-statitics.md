@@ -18,3 +18,5 @@ t-test: testing the null hypothesis that the population mean is 0.
 <img src="https://render.githubusercontent.com/render/math?math=t%20=%20\frac%20{x-\mu}{sample%20%20SD_{\overline%20{x}}} = \frac%20{x}{sample%20%20SD_{\overline%20{x}}}">
 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i%20\pi}%20=%20-1">
+
+alpha research: observe a pattern, identify opportunity, verify using historical data using statistical tests
