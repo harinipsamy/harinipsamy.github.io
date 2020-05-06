@@ -9,7 +9,7 @@ tags:
   - datascience
 ---
 
-standard deviation: <img src="https://render.githubusercontent.com/render/math?math=\root\sigma(x-xbar)">
+standard deviation: <img src="https://render.githubusercontent.com/render/math?math=\root\sigma">
 sample standard deviation: `sqrt((x-x')^2 / n)`
 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i%20\pi}%20=%20-1">
