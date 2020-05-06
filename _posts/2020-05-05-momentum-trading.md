@@ -1,5 +1,5 @@
 ---
-title: "momentum"
+title: "Momentum Trading"
 
 categories:
   - blog
