@@ -8,6 +8,7 @@ tags:
   - finance
 ---
 
+
 Momentum based trading is based on the theory that rising stocks continue to rise and falling stock prices keep falling. Outperforming stocks will continue to outperform while underperforming stocks will continue to underperform in the short-term, other things being equal.
 We can either take long or short position based on the momentum that we are tracking/want to take advantage of.
 
@@ -19,3 +20,5 @@ We can either take long or short position based on the momentum that we are trac
 
 
 -> fine-tune strategy and backtest.
+
+
