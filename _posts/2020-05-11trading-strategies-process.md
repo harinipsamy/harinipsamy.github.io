@@ -1,7 +1,12 @@
-----------
+---
 title: "steps in developing trading stragies"
-
-------
+categories:
+  - blog
+tags:
+  - building trading strategy
+  - finance
+  
+---
 
 # Forming a hypothesis
 
