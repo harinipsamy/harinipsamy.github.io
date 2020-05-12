@@ -57,7 +57,9 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
+url: "https://harinipsamy.github.io" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
 author:
   name   : "Harini Palanisamy"
   avatar : "/assets/images/bio-photo.jpg"
