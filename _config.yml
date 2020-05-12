@@ -114,4 +114,4 @@ tag_archive:
   type: liquid
   path: /harinipalanisamy/tags/
 
-theme: jekyll-theme-time-machine
+remote_theme: chrisrhymes/bulma-clean-theme
