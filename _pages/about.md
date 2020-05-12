@@ -1,5 +1,5 @@
 ---
-permalink: /harinipalanisamy/about
+permalink: /about
 title: "About"
 ---
 
