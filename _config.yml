@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Harini Palanisamy | Data Scientist | AI in investment enthusiast
+title: "Harini Palanisamy | Data Scientist | AI in investment enthusiast"
 email:
 description:  # this means to ignore newlines until "baseurl:"
-  Machine Learning intertwines my life as a Data Scientist by day and Investor by night 
+  "Machine Learning intertwines my life as a Data Scientist by day and Investor by night 
   - I strive to document my adventures in data science and trading/investing using Machine 
   learning techniques and my learning in this space.
-
+"
 #twitter_username: username
 github_username: harinipsamy
 minimal_mistakes_skin: contrast
