@@ -7,7 +7,7 @@ description: >
 baseurl: "/bulma-clean-theme"
 url: "https://www.csrhymes.com"
 permalink: pretty
-#favicon: /path/to/favicon.png
+favicon: favicon.png
 gh_sponsor: chrisrhymes
 
 paginate: 5
