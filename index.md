@@ -8,6 +8,8 @@ callouts: home_callouts
 show_sidebar: true
 ---
 
+
+
 # Bulma Clean Theme demo website
 
 Machine Learning intertwines my life as a Data Scientist by day and Investor by night - 
