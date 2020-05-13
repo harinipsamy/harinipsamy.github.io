@@ -14,7 +14,3 @@ items:
     call_to_action_name: Call to action 1
     call_to_action_link: /page-2/
    
- #links:
- #  - label: "GitHub"
- #     icon: "fab fa-fw fa-github"
- #     url: "https://github.com/harinipsamy"
