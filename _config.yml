@@ -5,7 +5,7 @@ email:
 #description: >-# Machine Learning intertwines my life as a Data Scientist by day and Investor by night   - I strive to document my adventures in data science and trading/investing using Machine   learning techniques and my learning in this space.
 #twitter_username: username
 github_username: harinipsamy
-#minimal_mistakes_skin: contrast
+minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
