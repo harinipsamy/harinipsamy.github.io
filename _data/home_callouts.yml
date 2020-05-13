@@ -16,3 +16,7 @@ items:
     subtitle: Quick and easy to get started
     icon: fab fa-github
     url: "github.com/harinipsamy"
+ links:
+   - - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/harinipsamy"
