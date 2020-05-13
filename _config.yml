@@ -9,7 +9,7 @@ baseurl: "/harinipalanisamy"
 url: "https://harinipsamy.github.io/"
 permalink: pretty
 favicon: favicon.png
-#gh_sponsor: chrisrhymes
+gh_sponsor: chrisrhymes
 
 paginate: 5
 paginate_path: "/blog/page:num"
