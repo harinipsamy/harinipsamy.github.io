@@ -14,6 +14,7 @@ items:
     call_to_action_link: /page-2/
   - title: Works with GitHub Pages
     subtitle: Quick and easy to get started
+    label: "lalala"
     icon: fab fa-github
     url: "github.com/harinipsamy"
  links:
