@@ -7,3 +7,6 @@ plugins:
   - jekyll-seo-tag
   - kramdown
   - rouge
+
+markdown: kramdown
+highlighter: rouge
