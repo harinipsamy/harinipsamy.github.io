@@ -4,6 +4,7 @@ subtitle: Data Scientist | AI in investment enthusiast
 layout: page
 callouts: home_callouts
 show_sidebar: true
+hero_darken: true
 ---
 
 # Bulma Clean Theme demo website
