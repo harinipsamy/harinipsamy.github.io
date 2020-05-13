@@ -8,7 +8,7 @@ github_username: harinipsamy
 search: true
 
 # Build settings
-#markdown: kramdown
+markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 #remote_theme: chrisrhymes/bulma-clean-theme
 # Outputting
