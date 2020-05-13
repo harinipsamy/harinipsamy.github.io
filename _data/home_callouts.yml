@@ -4,11 +4,6 @@ items:
     subtitle: Including sidebar, menubar, tabs and callouts
     icon: fa-copy
     link: /blog/
-  - title: Blog included
-    subtitle: Layouts for blog and post pages included
-    icon: fa-mail-bulk
-    call_to_action_name: Call to action 1
-    call_to_action_link: /page-2/
   - title: Works with GitHub Pages
     subtitle: Quick and easy to get started
     label: "lalala"
