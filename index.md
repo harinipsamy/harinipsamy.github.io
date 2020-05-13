@@ -5,6 +5,7 @@ layout: default
 callouts: home_callouts
 show_sidebar: true
 hero_darken: true
+author_profile: True
 ---
 
 # Bulma Clean Theme demo website
