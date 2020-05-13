@@ -1,5 +1,6 @@
 ---
 title: "steps in developing trading stragies"
+layout: post
 categories:
   - blog
 tags:
