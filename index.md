@@ -1,11 +1,5 @@
 
----
-title: Bulma Clean Theme
-subtitle: This is the demo site for Bulma Clean Theme
-layout: page
-callouts: home_callouts
-show_sidebar: true
----
+
 ---
 title: Harini Palanisamy 
 subtitle: Data Scientist | AI in investment enthusiast
@@ -19,9 +13,6 @@ show_sidebar: true
 Machine Learning intertwines my life as a Data Scientist by day and Investor by night - 
       I strive to document my adventures in data science and trading/investing using Machine learning 
       techniques and my learning in this space
-
-[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
-![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
 
 
 ## GitHub Page
