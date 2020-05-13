@@ -51,16 +51,16 @@ sass:
 defaults:
   -
     scope:
-      path: "/pages"
+      path: ""
       type: "pages"
     values:
       show_sidebar: true
   -
     scope:
-      path: "/posts"
+      path: ""
       type: "posts"
     values:
-      author: "C.S. Rhymes"
+      author: ""
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
