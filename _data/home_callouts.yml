@@ -4,14 +4,6 @@ items:
     subtitle: Including sidebar, menubar, tabs and callouts
     icon: fa-copy
     link: /blog/
-  - title: Works with GitHub Pages
-    subtitle: Quick and easy to get started
-    label: "lalala"
-    icon: fab fa-github
-    url: "github.com/harinipsamy"
-    label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/harinipsamy"
  
 - title: Blog included
     subtitle: Layouts for blog and post pages included
@@ -21,10 +13,8 @@ items:
       For example, such as this. 
     call_to_action_name: Call to action 1
     call_to_action_link: /page-2/
-     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/harinipsamy"
- links:
-   - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/harinipsamy"
+   
+ #links:
+ #  - label: "GitHub"
+ #     icon: "fab fa-fw fa-github"
+ #     url: "https://github.com/harinipsamy"
