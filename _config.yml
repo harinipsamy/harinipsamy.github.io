@@ -1,15 +1,15 @@
 theme: chrisrhymes/bulma-clean-theme
 # Site Settings
 title: Harini Palanisamy
-tagline: Bulma Clean Theme
+tagline: Harini Palanisamy
 email: your-email@domain.com
 description: >
-  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: "https://harinipsamy.github.io/"
+  Site for my portfolio and document my learnings
+baseurl: "harinipalanisamy/"
 url: "https://harinipsamy.github.io/"
 permalink: pretty
-favicon: favicon.png
-gh_sponsor: chrisrhymes
+#favicon: favicon.png
+#gh_sponsor: chrisrhymes
 
 paginate: 5
 paginate_path: "/blog/page:num"
