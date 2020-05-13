@@ -6,6 +6,7 @@ categories:
 tags:
   - building trading strategy
   - finance
+image:
 ---
 
 
