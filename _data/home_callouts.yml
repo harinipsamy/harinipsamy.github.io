@@ -7,6 +7,11 @@ items:
   - title: Blog included
     subtitle: Layouts for blog and post pages included
     icon: fa-mail-bulk
+    description: >
+      The example description text goes here and can be multiple lines.
+      For example, such as this. 
+    call_to_action_name: Call to action 1
+    call_to_action_link: /page-2/
   - title: Works with GitHub Pages
     subtitle: Quick and easy to get started
     icon: fab fa-github
