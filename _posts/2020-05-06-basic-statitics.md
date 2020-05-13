@@ -1,5 +1,5 @@
 ---
-title: "Statistics"
+title: "Basic Statistics"
 
 categories:
   - blog
