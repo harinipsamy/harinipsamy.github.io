@@ -10,3 +10,20 @@ plugins:
 
 markdown: kramdown
 highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Harini Palanisamy"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: true
