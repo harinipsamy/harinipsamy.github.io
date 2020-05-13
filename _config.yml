@@ -63,9 +63,9 @@ author:
   bio    : "Machine Learning intertwines my life as a Data Scientist by day and Investor by night - I strive to document my adventures in data science and trading/investing using Machine learning techniques and my learning in this space.</p>
               "
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+  #  - label: "Website"
+  #    icon: "fas fa-fw fa-link"
+   #   url: "https://"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/harinipalanisamy"
