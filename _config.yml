@@ -1,4 +1,4 @@
-theme: bulma-clean-theme
+remote_theme: bulma-clean-theme
 
 plugins:
   - jekyll-sitemap
