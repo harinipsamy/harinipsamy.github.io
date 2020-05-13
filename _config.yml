@@ -51,13 +51,13 @@ sass:
 defaults:
   -
     scope:
-      path: ""
+      path: "/pages"
       type: "pages"
     values:
       show_sidebar: true
   -
     scope:
-      path: ""
+      path: "/posts"
       type: "posts"
     values:
       author: "C.S. Rhymes"
