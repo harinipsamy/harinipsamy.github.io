@@ -1,7 +1,7 @@
 
 ---
 title: Harini Palanisamy 
-subtitle: </strong>| Data Scientist | AI in investment enthusiast
+subtitle: Data Scientist | AI in investment enthusiast
 layout: page
 callouts: home_callouts
 show_sidebar: true
