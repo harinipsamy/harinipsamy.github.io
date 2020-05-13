@@ -1,6 +1,6 @@
 ---
-title: Bulma Clean Theme
-subtitle: This is the demo site for Bulma Clean Theme
+title: Harini Palanisamy
+subtitle: Data Scientist | AI in investment enthusiast
 layout: page
 callouts: home_callouts
 show_sidebar: true
