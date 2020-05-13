@@ -92,5 +92,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /harinipalanisamy/tags/
-
-remote_theme: chrisrhymes/bulma-clean-theme
