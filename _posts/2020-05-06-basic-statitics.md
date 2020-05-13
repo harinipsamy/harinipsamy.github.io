@@ -7,6 +7,7 @@ tags:
   - building trading strategy
   - finance
   - datascience
+image: bulma-clean-theme-4by3.jpg
 ---
 
 standard deviation: <img src="https://render.githubusercontent.com/render/math?math=\sqrt{\frac{\sum_{i=1}^{n} (x-\overline{\rm x})^2}{n}}">
