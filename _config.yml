@@ -9,7 +9,7 @@ description: >
 url: "https://harinipsamy.github.io/"
 permalink: pretty
 
-#gh_sponsor: chrisrhymes
+#gh_sponsor: harini
 
 paginate: 5
 paginate_path: "/blog/page:num"
