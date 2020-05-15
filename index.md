@@ -4,7 +4,7 @@ subtitle: Data Scientist | AI in investment enthusiast
 layout: default
 callouts: home_callouts
 show_sidebar: true
-hero_darken: true
+hero_darken: false
 author_profile: True
 ---
 
