@@ -32,9 +32,10 @@ Backtesting the strategy on historical data to evaluate the performance.
 3. Cross-sectional strategies, also known as equity statistical arbitrage/ equity market neutral strategy
 4. Alternative data based strategies
 
-# Formign a hypothesis
+# Forming a hypothesis
 # Research
 ## Removing outliers
 Extreme and unexpected values in market data which may or may not represent real events. Some common outliers are:
 Fat finger errors - human error, missing data due to mistakes by the data provider. 
 stock returns has to be calculated on total returns. usually ticker prices are adjusted for corporate actions like split, but not adjusted for dividends. We should also adjust the data for dividends, to enable comparison between two stocks on a comparable level.
+
