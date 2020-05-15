@@ -3,10 +3,10 @@ title: Harini Palanisamy
 subtitle: Data Scientist | AI in investment enthusiast
 layout: default
 show_sidebar: true
-
+callouts: home_callouts
 author_profile: True
 ---
-callouts: home_callouts
+
 hero_darken: false
 # Bulma Clean Theme demo website
 
