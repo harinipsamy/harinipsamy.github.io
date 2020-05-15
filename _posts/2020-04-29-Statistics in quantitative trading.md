@@ -1,6 +1,6 @@
 ---
 title: "Statistics in quantitative trading"
-date: 2019-04-29T15:34:30-04:00
+date: 2020-04-29T15:34:30-04:00
 categories:
   - blog
 tags:
