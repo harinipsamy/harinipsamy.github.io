@@ -6,7 +6,7 @@ categories:
 tags:
   - building trading strategy
   - finance
- image: .jpg
+ 
 ---
 # Steps
 ## Forming a hypothesis
