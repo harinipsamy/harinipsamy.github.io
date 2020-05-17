@@ -6,7 +6,7 @@ categories:
 tags:
   - finance
   - statistics
-image: .jpg
+#image: .jpg
 ---
 
 stock prices are non-stationary - mean and SD of data changes over time. goal of time-series analysis is to predict future values based on past values.
