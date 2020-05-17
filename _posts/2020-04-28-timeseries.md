@@ -1,7 +1,7 @@
 ---
 title:  "Time series analysis"
-date:   2020-04-28 17:19:48 -0400
-tags : Blog
+#date:   2020-04-28 17:19:48 -0400
+#tags : Blog
 ---
 
 categories: Quantitative finance, AI in investment, finance
