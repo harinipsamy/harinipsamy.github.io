@@ -1,5 +1,6 @@
 ---
 title: "steps in developing trading stragies"
+date: 2020-05-11
 layout: post
 categories:
   - blog
