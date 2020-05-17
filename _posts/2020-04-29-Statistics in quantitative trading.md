@@ -7,7 +7,7 @@ tags:
   - plan
   - finance
   - statistics
-image: .jpg
+#image: .jpg
 ---
 
 <p>This includes a list of sub-topics to be covered in detail in separate posts:</p>
