@@ -72,7 +72,7 @@ defaults:
     values:
       author: ""
       layout: post
-      image: https://via.placeholder.com/1200x800
+      #image: https://via.placeholder.com/1200x800
       show_sidebar: true
 
 markdown: kramdown
@@ -84,7 +84,7 @@ collections:
   products: 
     output: true
     layout: product
-    image: https://via.placeholder.com/800x600
+    #image: https://via.placeholder.com/800x600
     show_sidebar: false
 author:
   name             : "Your Name"
