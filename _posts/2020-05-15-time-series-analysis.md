@@ -1,6 +1,6 @@
 ---
 title: "Time series analysis for quantitative trading"
-date: 2019-04-29T15:34:30-04:00
+date: 2020-05-15
 categories:
   - blog
 tags:
