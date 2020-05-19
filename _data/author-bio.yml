@@ -1,5 +1,5 @@
 avatar:
-  src: "/img/jetbrains-variant-4.svg"
+  src: /img/jetbrains-variant-4.svg
   
 content:
   name: "Harini Palanisamy"
