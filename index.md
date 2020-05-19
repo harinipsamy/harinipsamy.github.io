@@ -9,11 +9,11 @@ author_profile: True
 ---
 
 
-# Harini Palanisamy
+
 
 {% include author-profile.html %}
 
-
+---
 
 ## Portfolio
 
