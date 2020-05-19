@@ -20,9 +20,9 @@
     {% for entry in sm %}
         {% assign key = entry | first %}
         {% if sm[key].id %}
-            <li>
+            
             <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fa {{ sm[key].fa-icon }}"></i><span class="label">{{ sm[key].href }}{{ sm[key].id }}</span></a>
-            </li>
+           
         {% endif %}
     {% endfor %}
 </div>
