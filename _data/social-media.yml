@@ -5,11 +5,11 @@ email:
   title: 'Email'
   fa-icon: 'fa-envelope-square fa-2x'
 
-facebook:
+linkedin:
   id: 'harinipalanisamy'
   href: 'https://www.linkedin.com/in/'
   title: 'LinkedIn'
-  fa-icon: 'fa-LinkedIn'
+  fa-icon: 'fa-LinkedIn-square fa-2x'
 
 twitter:
   id: 'your-twitter-name'
@@ -21,4 +21,4 @@ github:
   id: 'harinipsamy'
   href: 'https://github.com/'
   title: 'GitHub'
-  fa-icon: 'fab fa-github'
+  fa-icon: 'fab fa-github fa-2x'
