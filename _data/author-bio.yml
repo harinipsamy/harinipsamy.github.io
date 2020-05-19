@@ -1,7 +1,5 @@
-avatar:
-  src: /img/jetbrains-variant-4.svg
-  
-content:
+  #src: /img/jetbrains-variant-4.svg
+  src: favicon.png
   name: "Harini Palanisamy"
   about: "blah blah"
   
