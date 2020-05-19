@@ -71,7 +71,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: ""
+      author: "Harini Palanisamy"
       layout: post
       #image: https://via.placeholder.com/1200x800
       show_sidebar: true
