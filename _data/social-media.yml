@@ -9,7 +9,7 @@ linkedin:
   id: 'harinipalanisamy'
   href: 'https://www.linkedin.com/in/'
   title: 'LinkedIn'
-  fa-icon: 'fa-LinkedIn-square fa-2x'
+  fa-icon: 'fab fa-linkedin fa-2x'
 
 twitter:
   id: 'your-twitter-name'
