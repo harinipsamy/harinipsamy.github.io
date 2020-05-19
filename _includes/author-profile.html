@@ -1,13 +1,6 @@
 {% if site.data.social-media %}
 
-<div id="bio">
-      {% assign bio = site.data.author %}
-     <a href={{ avatar.href }}{{ sm[key].id }}
-        <img src="{{ avatar.href | relative_url }}"
-    </a>
-    
-</div>
-         
+        
 <div id="social-media">
     {% assign sm = site.data.social-media %}
     {% for entry in sm %}
@@ -20,3 +13,14 @@
     {% endfor %}
 </div>
 {% endif %}
+
+{% if site.data.author-bio %}
+
+<div id="bio">
+      {% assign bio = site.data.author-bio %}
+     <li>
+      <a href="{{ avatar.href }}"
+        <img src="{{ avatar.src | relative_url }}"
+    </a>
+</li>
+</div>
