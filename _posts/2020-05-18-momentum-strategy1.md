@@ -20,3 +20,6 @@ I downloaded free data from quantquote from here: https://quantquote.com/histori
 
 <script src="https://gist.github.com/harinipsamy/f75c803af9bf7698fd009ed466381944"> </script>
 
+
+<script src="https://gist.github.com/harinipsamy/ea574cdc1244ec9da92c95482afc7853.js"></script>
+
