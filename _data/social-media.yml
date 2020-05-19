@@ -1,9 +1,8 @@
-
-email:
-  id: 'your.name@yoursite.com'
-  href: 'mailto:'
-  title: 'Email'
-  fa-icon: 'fa-envelope fa-2x'
+github:
+  id: 'harinipsamy'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fab fa-github fa-2x'
 
 linkedin:
   id: 'harinipalanisamy'
@@ -11,14 +10,15 @@ linkedin:
   title: 'LinkedIn'
   fa-icon: 'fab fa-linkedin-in fa-2x'
 
+email:
+  id: 
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope fa-2x'
+
 twitter:
-  id: 'your-twitter-name'
+  id: 
   href: 'https://www.twitter.com/'
   title: 'Twitter'
   fa-icon: 'fa-twitter-square'
 
-github:
-  id: 'harinipsamy'
-  href: 'https://github.com/'
-  title: 'GitHub'
-  fa-icon: 'fab fa-github fa-2x'
