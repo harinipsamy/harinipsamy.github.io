@@ -19,7 +19,7 @@
 <div id="bio">
       {% assign bio = site.data.author-bio %}
      <li>
-      <a> 
+      <a title="{{bio.about}}"> 
         <img src="{{ avatar.src }}">
              <img src="{{ bio.src | relative_url }}">
               <span class="label">{{bio.about}}</span>
