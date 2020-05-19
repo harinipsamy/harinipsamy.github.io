@@ -7,7 +7,8 @@
                     {% for callout in callouts.items %}
                        <div class="column is-4 has-text-centered">
                             {% if callout.icon %}
-                            <div class="icon is-large">
+                           <a href="{{callout.link}}"> 
+                           <div class="icon is-large">
                                 <i class="fas {{ callout.icon }} fa-4x"></i>
                             </div>
                             {% endif %}
@@ -23,7 +24,7 @@
                             {% if callout.call_to_action_name %}
                             <a href="{{ callout.call_to_action_link | prepend: site.baseurl }}" class="button is-primary">
                                 {{ callout.call_to_action_name }}
-                            </a>
+                               </a></a>
                             {% endif %}
                         </div>
                     {% endfor %}
