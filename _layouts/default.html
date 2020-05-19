@@ -14,7 +14,10 @@
         {% include hero.html %}
     {% endunless %}
     {% include callouts.html %}
-   
+    {% if author.bio %}
+      {% include author-profile.html %}
+  {% endif %}
+
      
     <section class="section">
         <div class="container">
