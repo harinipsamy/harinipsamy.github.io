@@ -1,8 +1,8 @@
 {% if site.data.author-bio %}
 
-<div id="bio">
+<div id="avatar">
       {% assign bio = site.data.author-bio %}
-          <a title="{{bio.about}}"> 
+          <a title="{{avatar.name}}"> 
         <img src="{{ avatar.src }}">
              <img src="{{ bio.src | relative_url }}">
               <span class="label">{{bio.name}}</span>
@@ -25,4 +25,17 @@
     {% endfor %}
 </div>
 {% endif %}
+
+
+{% if site.data.author-bio %}
+
+<div id="bio">
+      {% assign bio = site.data.author-bio %}
+          <a title="{{bio.about}}"> 
+              
+              <span class="label">{{bio.about}}</span>
+    </a>
+</div>
+{% endif %}
+
 
