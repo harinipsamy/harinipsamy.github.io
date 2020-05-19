@@ -9,12 +9,10 @@ author_profile: True
 ---
 
 
-# Bulma Clean Theme demo website
+# Harini Palanisamy
 
 {% include author-profile.html %}
 
-<a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me">Click here to send me an email!</a>
-  
 
 
 ## Portfolio
