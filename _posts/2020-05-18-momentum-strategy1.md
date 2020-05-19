@@ -3,7 +3,7 @@ title: Momentum strategy based on historical performance
 
 tags: 
  - quantitative research
-
+author: Harini Palanisamy
 ---
 
 In this post, we will go over implementing a simple momentum strategy. The strategy simply picks top and bottom performing stocks to buy/sell as the case maybe. 
