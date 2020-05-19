@@ -11,7 +11,7 @@ author_profile: True
 
 # Bulma Clean Theme demo website
 
-
+{% include author-profile.html %}
 ## Portfolio
 
 ---
