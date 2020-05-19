@@ -16,4 +16,6 @@ I downloaded free data from quantquote from here: https://quantquote.com/histori
 <script src="https://gist.github.com/harinipsamy/f75c803af9bf7698fd009ed466381944.js"></script>
 
 
+<script src="https://gist.github.com/harinipsamy/c9524b5c6cefb0b97778ecfc2cf5daa3.js"></script>
+
 
