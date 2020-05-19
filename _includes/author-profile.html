@@ -1,11 +1,20 @@
 {% if site.data.author %}
+
+<div id="bio">
+      {% assign bio = site.data.author %}
+     <a href="{{ avatar.href }}{{ sm[key].id }}" 
+        <img src="{{ avatar.href | relative_url }}"
+    </a>
+    
+</div>
+         
 <div id="social-media">
     {% assign sm = site.data.author %}
     {% for entry in sm %}
         {% assign key = entry | first %}
         {% if sm[key].id %}
             <li>
-            <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fa {{ sm[key].fa-icon }}"></i><span class="label">{{sm[key].title}}</span></a>
+            <a href="{{ sm[key].href }}{{ sm[key].id }}"  <a href="{{ avatar.href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fa {{ sm[key].fa-icon }}"></i><span class="label">{{sm[key].title}}</span></a>
             </li>
         {% endif %}
     {% endfor %}
