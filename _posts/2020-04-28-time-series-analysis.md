@@ -1,13 +1,23 @@
 ---
 title: "Time series analysis for quantitative trading"
-date: 2020-05-15
-categories:
-  - blog
 tags:
-  - finance
+  - blog
   - statistics
-
+  - quantitative finance
+  - AI in investment
+  - finance
 ---
+
+Overview of time series analysis topics covered in this post:
+
+AutoRegression
+MovingAverages
+ARCH and GARCH models
+Kalman filters
+Particle filters
+Recurrent Neural Networks
+
+
 
 stock prices are non-stationary - mean and SD of data changes over time. goal of time-series analysis is to predict future values based on past values.
 
