@@ -10,7 +10,7 @@ author: Harini Palanisamy
 
 In this post, I will go over my implemention of a simple momentum strategy. The strategy simply picks top and bottom performing stocks to buy/sell as the case maybe. 
 
-## Readin the data
+## Reading the data
 
 ### Ticker data source
 
