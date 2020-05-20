@@ -18,7 +18,6 @@ I downloaded free data from quantquote from [**here**](https://quantquote.com/hi
 First thing first. Let's import the libraries we would require. 
 
 
-
 ```python
 import pandas as pd
 import numpy as np
@@ -27,13 +26,12 @@ import os
 from scipy import stats
 ```
 
-# Momentum strategy 1: Selecting top and bottom performing stocks for long and short positions in the portfolio based on month-end observations.
+### Reading ticker data downloaded from quantquote
 
-### Read ticker data downloaded from quantquote
-
+Quantquote provides the stock price data for each symbol in a separate csv file. In order to put all the ticker data together, we can use a library called glob, and use the method called glob.glob() on the type of file we want to collate - in this case, all the files with .csv extension. 
 
 ```python
-files = glob.glob("/home/home/vbox_shared/projects/Momentum-Trading/daily/*.csv")
+files = glob.glob("/.../Momentum-Trading/daily/*.csv")
 df = pd.concat([pd.read_csv(fp,names=['date','0','open','high','low','close','volume'])
                 .assign(ticker=os.path.basename(fp).replace('_','.').split('.')[1]) for fp in files])
 df['date'] = pd.to_datetime(df['date'],format='%Y%m%d')
@@ -48,20 +46,23 @@ print (df.head())
     3 1998-01-07  0  23.2255  23.3596  22.9855  23.3385  7.102218e+06     ko
     4 1998-01-08  0  23.2255  23.6455  23.2044  23.5361  8.561481e+06     ko
 
+There's an extra column with 0s, but let's not worry about it at this time. We will only be working on closing prices anyway. 
 
 ### Pivot to closing prices
 
+Having all the stock price information in a single dataframe makes it cumbersome to do operations on them. Since we will be performing timer-series calculations on each ticker symbol, having both date and ticker symbol on the same axis might not be a good idea. We can also use groupby function of Pandas to perform the same functions, but pivot function renders a dataFrame as against groupby, which gives us a groupby object, which might not be the best option when we want to do repeated calculations.
+
+df.pivot() creates a reshaped dataframe by pivoting the original dataframe based on the arguments passed like index, column and values of the dataframe. We can create five dataframes each for open, high, low, close and volume using this method. But for now, we want only the closing prices, so we will create a dataframe of closing prices of all tickers. Since we are interested in time-series analysis, we will have date as the index and one column for each ticker.
 
 ```python
 close = df.pivot(index='date', columns='ticker', values='close')
 ```
 
+A glimpse of how the new dataframe looks like:
 
 ```python
 close.head()
 ```
-
-
 
 
 <div>
@@ -259,14 +260,20 @@ close.head()
 
 ### Check data for survivor bias
 
+Before we proceed further, let's do a check on the data we downloaded to ensure that it doesn't have survivor bias. Survivor bias is when we do caclulations on the stocks that are trading as of today. In other words, we consider only stocks that have 'survived' the past and ignore the stocks that are no longer in the stock environment that we are analyzing. For example, lot's of dot com companies that were listed in 1998 did not last after the bubble burst in the early 2000. If we were to do a 25 year analysis of past performance of stocks based on the stocks that are trading today, we would erroneously conclude that these stocks performed extremely well, basing our opinion on the few stocks like Amazon that survived the bubble. In order to get an accurate picture of market performance, we need to consider the stocks that were included in the stock environment at the time we start of our duration of analysis. Since our data is from 1998 to 2013, we need to make sure that the stock universe includes data that were in existence in 1998, but are no longer part of the stock universe, for whatever reason. 
+
+I did the check by simply checking if there are stocks that had null values at the tail. This may not be absolutely foolproof, but it should suffice, considering the fact that we are still in the stage of evaluating whether our hypothesis has alpha and if we should proceed further to build the strategy. 
 
 ```python
+# Count number of null values for each ticker
 a =close.isnull().sum()
 a = a[a>0]
 ```
 
 
 ```python
+# consider only those tickers that had null values in the last 20 dates. Twenty is just a random number I used. There are three stocks in the universe which had no values at the end, which is what we were looking for.
+
 for i in a.index:
     if close[i].tail(20).isnull().sum() >0:
         print(i)
@@ -300,7 +307,11 @@ print(close['cvh'].tail(70))
 
 Includes ticker with NaN values at tail. All is well.
 
-### For each month-end observation period, rank the stocks by previous returns, from the highest to the lowest
+## Ranking stocks based on performance
+
+
+
+For each month-end observation period, we rank the stocks by previous returns to find the best and worst performing stocks during the period. Pandas has resample method that converts the data into a different time factor. 
 
 
 ```python
