@@ -8,6 +8,8 @@ tags:
 author: Harini Palanisamy
 ---
 
+This is continuation of the momentum strategy based on historical performance part-1, which can be found here(https://harinipsamy.github.io/2020/05/20/momentum-strategy-1-part1/).
+
 ## Ranking stocks based on performance
 
 ### Converting data into monthly series
