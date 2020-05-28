@@ -133,4 +133,4 @@ print(close['cvh'].tail(70))
 Includes ticker with NaN values at tail. All is well.
 
 
-
+Read the Part 2 of implementing this strategy [**here**](https://harinipsamy.github.io/2020/05/28/momentum-strategy-1-part2/)
