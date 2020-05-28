@@ -42,6 +42,7 @@ exclude:
   - vendor/ruby/
 
 livereload: true
+sitemap: True
 
 sass:
   style: compressed
