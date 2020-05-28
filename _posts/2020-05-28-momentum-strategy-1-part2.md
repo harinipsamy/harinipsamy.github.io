@@ -1,3 +1,13 @@
+---
+title: Momentum strategy based on historical performance - part 2
+
+tags: 
+ - quantitative research
+ - algorithmic trading
+ - stock market
+author: Harini Palanisamy
+---
+
 ## Ranking stocks based on performance
 
 ### Converting data into monthly series
