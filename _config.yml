@@ -6,7 +6,7 @@ email: your-email@domain.com
 description: >
   Site for my portfolio and document my learnings
 #baseurl: "/harinipalanisamy"
-url: "https://harinipsamy.github.io/"
+url: "https://harinipsamy.github.io"
 permalink: pretty
 author: Harini Palanisamy
 author_profile: true
