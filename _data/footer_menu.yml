@@ -4,10 +4,6 @@
   link: /blog/
 - name: github
   link: 'https://github.com/harinipsamy'
-  title: 'GitHub'
-  fa-icon: 'fab fa-github fa-2x'
-
 - name: linkedin
   link: 'https://www.linkedin.com/in/harinipalanisamy'
-  title: 'LinkedIn'
-  fa-icon: 'fab fa-linkedin-in fa-2x'
+  
