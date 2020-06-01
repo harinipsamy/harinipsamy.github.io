@@ -2,10 +2,6 @@
   link: /
 - name: Blog
   link: /blog/
-- name: Products
-  link: /products/
-- name: Privacy Policy
-  link: /privacy-policy/
 - name: github
   link: 'https://github.com/harinipsamy'
   title: 'GitHub'
