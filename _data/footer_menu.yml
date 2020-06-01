@@ -6,10 +6,8 @@
   link: /products/
 - name: Privacy Policy
   link: /privacy-policy/
-
 - name: github
-  
-  href: 'https://github.com/harinipsamy'
+  link: 'https://github.com/harinipsamy'
   title: 'GitHub'
   fa-icon: 'fab fa-github fa-2x'
 
