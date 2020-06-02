@@ -10,7 +10,7 @@ author_profile: True
 
 
 
-{% include head.html % }
+
 {% include author-profile.html %}
 
 ---
