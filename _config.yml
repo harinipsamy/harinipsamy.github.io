@@ -5,7 +5,7 @@ tagline: Harini Palanisamy
 email: your-email@domain.com
 description: >
   Site for my portfolio and document my learnings
-#baseurl: "/harinipalanisamy"
+baseurl: "/harini-palanisamy"
 url: "https://harinipsamy.github.io"
 permalink: pretty
 author: Harini Palanisamy
