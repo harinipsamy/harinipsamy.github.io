@@ -18,17 +18,21 @@ variance = SD ^2
 
 Mean of the portfolio returns is the weighted average of the sum of returns of the individual assets calculated as above.
 
-<img src="https://render.githubusercontent.com/render/math?math=rp(i) = x_AE(r_A) + x_BE(r_B)">, where x is the weight of each asset. 
+<img src="https://render.githubusercontent.com/render/math?math=rp(i) = (x_AE(r_A)) + x_BE(r_B)">, where x is the weight of each asset. 
 
 
 ### Portfolio variance
 
 <img src="https://render.githubusercontent.com/render/math?math=r_A^2 \sigma_A^2 \+ r_B^2 \sigma_B^2 \+ 2x_Ax_BCov(r_A,r_B)">
 `r_A^2\sigma_A^2 + r_B^2 \sigma_B^2 + 2x_Ax_BCov(r_A,r_B)`
+Variance of 3-asset portfolio:
+
 
 ### Covariance matrix
 
 ### Portfolio risk 
+As long as the stocks in the portfolio are not perfectly correlated, the portfolio risk will be less than the weighted sum of individual risks.
+
 
 #### Quadratic form
 
