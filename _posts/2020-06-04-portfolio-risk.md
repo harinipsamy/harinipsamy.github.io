@@ -23,7 +23,7 @@ Mean of the portfolio returns is the weighted average of the sum of returns of t
 
 ### Portfolio variance
 
-<img src="https://render.githubusercontent.com/render/math?math=r_A^2 \sigma_A^2+ r_B^2 \sigma_B^2 + 2x_Ax_BCov(r_A,r_B)">
+<img src="https://render.githubusercontent.com/render/math?math=r_A^2 \sigma_A^2 \+ r_B^2 \sigma_B^2 \+ 2x_Ax_BCov(r_A,r_B)">
 
 
 ### Covariance matrix
