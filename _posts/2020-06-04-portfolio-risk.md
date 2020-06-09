@@ -17,13 +17,7 @@ variance = SD ^2
 ### Portfolio Mean
 
 Mean of the portfolio returns is the weighted average of the sum of returns of the individual assets calculated as above.
-\\[
-\begin{bmatrix}
-2 & 8 & 1 \\\\
-3 & 7 & x \\\\
-6 & 4 & 5
-\end{bmatrix}
-\\]
+
 <img src="https://render.githubusercontent.com/render/math?math=rp(i) = (x_AE(r_A)) ++ (x_BE(r_B))">, where x is the weight of each asset. 
 
 
@@ -47,13 +41,11 @@ The above formula can be written in matrix form as:
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}">
 
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
-$$
-M = \left( \begin{array}{ccc}
+$$M = \left( \begin{array}{ccc}
 x_{11} & x_{12} & \ldots \\
 x_{21} & x_{22} & \ldots \\
 \vdots & \vdots & \ldots \\
-\end{array} \right)
-$$
+\end{array} \right)$$
 
 
 ### Covariance matrix calculation
