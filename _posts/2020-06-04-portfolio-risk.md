@@ -43,7 +43,7 @@ The above formula can be written in matrix form as:
 
 Let P be the covariance matrix:
 <img src="https://latex.codecogs.com/svg.latex?P=\begin {bmatrix} Cov(r_A,r_A) & Cov(r_A,r_B) \\ Cov(r_B,r_A) & Cov(r_B,r_B)\end {bmatrix}">
-and x be the weight vectors:
+and `x` be the weight vectors:
 <img src="https://latex.codecogs.com/svg.latex?x = \begin {bmatrix} x_A \\ x_B\end {bmatrix}">
 
 then,
