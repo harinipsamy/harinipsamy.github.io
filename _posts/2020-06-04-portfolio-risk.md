@@ -29,8 +29,6 @@ Variance of 3-asset portfolio:
 
 
 ### Covariance matrix
-The above formula can be written in matrix form as:
-<img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
 
 ### Portfolio risk 
 As long as the stocks in the portfolio are not perfectly correlated, the portfolio risk will be less than the weighted sum of individual risks.
@@ -39,6 +37,9 @@ As long as the stocks in the portfolio are not perfectly correlated, the portfol
 #### Quadratic form
 
 #### Matrix form
+The above formula can be written in matrix form as:
+<img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}">
+<img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
 
 ### Covariance matrix calculation
 equal probability and mean is 0
