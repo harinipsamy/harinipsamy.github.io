@@ -38,7 +38,8 @@ As long as the stocks in the portfolio are not perfectly correlated, the portfol
 
 #### Matrix form
 The above formula can be written in matrix form as:
-<img src="https://latex.codecogs.com/svg.latex?\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}">
+
+<img src="https://latex.codecogs.com/svg.latex?\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}\begin {bmatrix} Cov(r_A,r_A) & Cov(r_A,r_B) \\ Cov(r_B,r_A) & Cov(r_B,r_B)\end {bmatrix}">
 
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
 
