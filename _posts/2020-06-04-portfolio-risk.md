@@ -39,6 +39,8 @@ As long as the stocks in the portfolio are not perfectly correlated, the portfol
 #### Matrix form
 The above formula can be written in matrix form as:
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}">
+
+<img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
 $$
 M = \left( \begin{array}{ccc}
 x_{11} & x_{12} & \ldots \\
@@ -47,7 +49,6 @@ x_{21} & x_{22} & \ldots \\
 \end{array} \right)
 $$
 
-<img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
 
 ### Covariance matrix calculation
 equal probability and mean is 0
