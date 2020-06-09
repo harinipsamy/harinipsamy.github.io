@@ -41,11 +41,11 @@ The above formula can be written in matrix form as:
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}">
 
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_P^2 =  x^TPx">
-$$M = \left( \begin{array}{ccc}
+$M = \left( \begin{array}{ccc}
 x_{11} & x_{12} & \ldots \\
 x_{21} & x_{22} & \ldots \\
 \vdots & \vdots & \ldots \\
-\end{array} \right)$$
+\end{array} \right)$
 
 
 ### Covariance matrix calculation
