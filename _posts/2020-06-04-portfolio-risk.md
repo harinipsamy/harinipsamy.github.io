@@ -70,7 +70,7 @@ equal probability and mean is 0
 
 Sharpe ratio is the reward to risk ratio and is calculated as the excess of asset return over benchmark return, divided by the standard deviation of the excess asset return
 
-<img src="https://latex.codecogs.com/svg.latex?excess%20return, a_t = r_{portfolio}%20-%20r_{rf,t}">
+<img src="https://latex.codecogs.com/svg.latex?excess%20 return, a_t = r_{portfolio}%20-%20r_{rf,t}">
 
 <img src="https://latex.codecogs.com/svg.latex?sharpe%20ratio = \dfrac%20{\dfrac{1}{T}%20\sum_{t=1}^{T}a_t}{\sqrt{\dfrac{\sum_{t=1}^{T}(a_t%20-%20\mu_{a,t})}{T-1}}">
 
@@ -82,7 +82,7 @@ Sharpe ratio is the reward to risk ratio and is calculated as the excess of asse
 <img src="https://latex.codecogs.com/svg.latex?semi-deviation = \sum_{i=1}^{n} (\mu - r_i)^2 * I_{r_i < \mu}">
 
 where <img src="https://latex.codecogs.com/svg.latex?I_{r_i < \mu} = 1 if r_i<\mu and 0 otherwise">
-         I_{r_i<\mu} =0```
+         
 
 
 
