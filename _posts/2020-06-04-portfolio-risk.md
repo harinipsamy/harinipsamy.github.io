@@ -79,6 +79,11 @@ Sharpe ratio is the reward to risk ratio and is calculated as the excess of asse
 
 #### Downside risk
 
+<img src="https://latex.codecogs.com/svg.latex?semi-deviation = \sum_{i=1}^{n} (\mu - r_i)^2 * I_{r_i < \mu}">
+
+where ```latex 
+         I_{r_i<\mu} =0```
+
 
 
 #### Value-at-Risk
