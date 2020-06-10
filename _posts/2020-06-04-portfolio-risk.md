@@ -72,9 +72,13 @@ Sharpe ratio is the reward to risk ratio and is calculated as the excess of asse
 
 <img src="https://latex.codecogs.com/svg.latex?excess%20return, a_t = r_{portfolio}%20-%20r_{rf,t}">
 
-<img src="https://latex.codecogs.com/svg.latex?\dfrac%20{\dfrac{1}{T}%20\sum_{t=1}^{T}a_t}{\sqrt{\dfrac{\sum_{t=1}^{T}(a_t%20-%20\mu_{a,t})}{T-1}}">
+<img src="https://latex.codecogs.com/svg.latex?sharpe%20ratio = \dfrac%20{\dfrac{1}{T}%20\sum_{t=1}^{T}a_t}{\sqrt{\dfrac{\sum_{t=1}^{T}(a_t%20-%20\mu_{a,t})}{T-1}}">
+
+<img src="https://latex.codecogs.com/svg.latex?annualized sharpe ratio = \sqrt{252} * sharpe ratio">
 
 
 #### Downside risk
+
+
 
 #### Value-at-Risk
