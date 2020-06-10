@@ -81,7 +81,7 @@ Sharpe ratio is the reward to risk ratio and is calculated as the excess of asse
 
 <img src="https://latex.codecogs.com/svg.latex?semi-deviation = \sum_{i=1}^{n} (\mu - r_i)^2 * I_{r_i < \mu}">
 
-where ```latex 
+where <img src="https://latex.codecogs.com/svg.latex?I_{r_i < \mu} = 1 if r_i<\mu and 0 otherwise">
          I_{r_i<\mu} =0```
 
 
