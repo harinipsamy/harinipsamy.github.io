@@ -42,7 +42,7 @@ The above formula can be written in matrix form as:
 <img src="https://latex.codecogs.com/svg.latex?\sigma_P^2 = \begin {bmatrix} x_A & x_B\end {bmatrix}\begin {bmatrix} Cov(r_A,r_A) & Cov(r_A,r_B) \\ Cov(r_B,r_A) & Cov(r_B,r_B)\end {bmatrix}\begin {bmatrix} x_A \\ x_B\end {bmatrix}">
 
 
-Let P be the covariance matrix:
+Let `P` be the covariance matrix:
 
 
 <img src="https://latex.codecogs.com/svg.latex?P=\begin {bmatrix} Cov(r_A,r_A) & Cov(r_A,r_B) \\ Cov(r_B,r_A) & Cov(r_B,r_B)\end {bmatrix}">
