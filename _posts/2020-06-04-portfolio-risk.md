@@ -11,22 +11,22 @@ When making investment decisions, it is as important to consider risk of the ass
 ### Mean and variance 
 
 Mean or average log return of a stock = expected value = sum of returns over period i/number of observations = sum_ prob. of observations x observations
-<img src="https://render.githubusercontent.com/render/math?math=E(r) = \sum_{i=1}^{n} p(i)r(i)">
-variance = SD ^2
+<img src="https://latex.codecogs.com/svg.latex?E(r) = \sum_{i=1}^{n} p(i)r(i)">
+<img src="https://latex.codecogs.com/svg.latex?variance = SD^2">
 
 ### Portfolio Mean
 
 Mean of the portfolio returns is the weighted average of the sum of returns of the individual assets calculated as above.
 
-<img src="https://render.githubusercontent.com/render/math?math=rp(i) = (x_AE(r_A)) ++ (x_BE(r_B))">, where x is the weight of each asset. 
+<img src="https://latex.codecogs.com/svg.latex?rp(i) = (x_AE(r_A)) ++ (x_BE(r_B))">, where x is the weight of each asset. 
 
 
 ### Portfolio risk
 
 As long as the stocks in the portfolio are not perfectly correlated, the portfolio risk will be less than the weighted sum of individual risks.
 
-<img src="https://render.githubusercontent.com/render/math?math=r_A^2 \sigma_A^2 \+ r_B^2 \sigma_B^2 \+ 2x_Ax_BCov(r_A,r_B)">
-`r_A^2\sigma_A^2 + r_B^2 \sigma_B^2 + 2x_Ax_BCov(r_A,r_B)`
+<img src="https://latex.codecogs.com/svg.latex?r_A^2 \sigma_A^2 \+ r_B^2 \sigma_B^2 \+ 2x_Ax_BCov(r_A,r_B)">
+
 Variance of 3-asset portfolio:
 
 
