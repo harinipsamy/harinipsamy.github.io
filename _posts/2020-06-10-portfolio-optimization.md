@@ -1,5 +1,5 @@
 ---
-title:"Portfolio Optimization"
+title: "Portfolio Optimization"
 tags:
   - quantitative finance
   - portfolio management
