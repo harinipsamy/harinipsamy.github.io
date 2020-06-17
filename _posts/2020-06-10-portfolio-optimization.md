@@ -20,4 +20,8 @@ By setting the derivative of the function to 0 and solving for x, we can find th
 
 ### Local minimum
 
+To distinguish between minima/maxima or saddle points, we can use the second derivative test:
+if `f"(x_0)`
+
+
 ## Convex functions
