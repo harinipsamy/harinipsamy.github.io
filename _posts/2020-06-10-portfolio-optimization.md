@@ -5,7 +5,9 @@ tags:
   - portfolio management
   - stocks
   - algorithmic trading
+
 ---
+
 
 Optimization involves finding maximum or minimum of a funtion. A Maximization problem can be converted to a minimization problem by optimizing for the negative of a function.
 
