@@ -53,3 +53,17 @@ We can have any number of constraints based on the portfolio strategy. Some comm
 **sector limits:**
 <img src="https://latex.codecogs.com/svg.latex? x_biotech \leq M,\ \ M = max. % of portfolio to invest in biotech companies">
 
+## Rebalancing portfolio
+
+We need to periodically rebalance the portfolio to reflect the desired weights for each stock calculated using portfolio optimization. To rebalance, we need to first run the optimization algorithm using the same objective function and constraints but using updated data. 
+
+### Rebalancing frequency
+The frequency at which the rebalancing should be done depends on the costs we are willing to incur. Frequently updating the weights of the stocks will result in higher rebalancing costs, as transactions costs and taxes are incurred each time a trade takes place.
+
+### Rebalancing event
+
+**Temporal:** Portfolio is rebalanced at a pre-determined time - daily, bi-weekly, monthly, etc
+
+**Threshold:** Portfolio is rebalanced when a pre-determined threshold of a parameter is breached. For example, when weight of the assets in the portfolio changes by more than 10%
+
+**combined:** Rebalancing event is when both temporal and threshold events occur.
