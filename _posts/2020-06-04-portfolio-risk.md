@@ -87,3 +87,6 @@ where <img src="https://latex.codecogs.com/svg.latex?\ I_{r_i < \mu} = 1\ if\ r_
 
 
 #### Value-at-Risk
+
+
+## Limitations of mean and variance
