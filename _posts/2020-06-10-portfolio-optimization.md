@@ -44,8 +44,12 @@ We can also have objective funtion that only maximizes returns or minimizes vari
 
 We can have any number of constraints based on the portfolio strategy. Some common ones are:
 
-Weights sum to one:
+**Weights sum to one:**
 <img src="https://latex.codecogs.com/svg.latex? \sum{x_i} = 1">
 
-no short selling:
+**No short selling:**
 <img src="https://latex.codecogs.com/svg.latex? 0\leq x_i \geq 1">
+
+**sector limits:**
+<img src="https://latex.codecogs.com/svg.latex? x_biotech \leq M,\ \ M = max. % of portfolio to invest in biotech companies">
+
