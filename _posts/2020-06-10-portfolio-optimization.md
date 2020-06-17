@@ -21,7 +21,7 @@ By setting the derivative of the function to 0 and solving for x, we can find th
 ### Local minimum
 
 To distinguish between minima/maxima or saddle points, we can use the second derivative test:
-<img src="https://latex.codecogs.com/svg.latex?if f\"(x_0) > 0, then f has a local minimum at x_0">
+<img src="https://latex.codecogs.com/svg.latex?if f''(x_0) > 0, then f has a local minimum at x_0">
 <img src="https://latex.codecogs.com/svg.latex?if (x_0) > 0, then \textit{f} has a local minimum at x_0">
 
 
