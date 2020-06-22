@@ -17,7 +17,26 @@ Kalman filters
 Particle filters
 Recurrent Neural Networks
 
+# Concepts relevant to time series analysis
 
+## Stationarity
+
+A time series is said to be stationary if the joint probability distribution does not change under time shift. For example, a time series `latex r_t` is stationary if the joint distribution of (r_t1,r_t2,...r_tn) is same as the joint probability distribution of say (r_t1+1, r_t2+1,...rtn+1). 
+
+weak-stationarity: when both mean and the autocovariance of the time series are time invariant. In other words, we can say a time-series is weakly stationary if its first moment (mean) and second moment (variance) are constant. Stock return series are weakly stationary. If the time series is normally distributed, then weak stationarity is equivalent to strict stationarity.
+
+A time series may be non-stationary due either to the presence of a unit root or of a deterministic trend. 
+
+
+### trend-stationarity
+When a time series is non-stationary due to a deterministic trend. Can be transformed to stationary process by differencing or removing seaonality
+### unit root
+The stochastic process with a unit root are not mean-reverting.
+
+## Correlation and Autocorrelation
+
+Autocorrelation function (ACF): 
+that is they have a constant mean and variance.that is they have a constant mean and variance.
 
 stock prices are non-stationary - mean and SD of data changes over time. goal of time-series analysis is to predict future values based on past values.
 
