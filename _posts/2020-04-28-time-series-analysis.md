@@ -35,8 +35,20 @@ The stochastic process with a unit root are not mean-reverting.
 
 ## Correlation and Autocorrelation
 
+Correlation coefficient between two random variables X and Y:
+
+<img src="https://latex.codecogs.com/svg.latex?\rho_{x,y} = \frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}">
+
 Autocorrelation function (ACF): 
+The correlation coefficient between <img src="https://latex.codecogs.com/svg.latex?r_t"> and <img src="https://latex.codecogs.com/svg.latex?r_{t-n}"> is called the lag-n autocorrelation of <img src="https://latex.codecogs.com/svg.latex?r_{t}">, where <img src="https://latex.codecogs.com/svg.latex?r_{n}"> is a weakly stationary return series.
+
+<img src="https://latex.codecogs.com/svg.latex?\rho_{n} = \frac{Cov(r_t,r_{t-n})}{Var(r_t)}">
+
+A linear time series model can be characterized by its ACF.
+
+
 that is they have a constant mean and variance.that is they have a constant mean and variance.
+
 
 stock prices are non-stationary - mean and SD of data changes over time. goal of time-series analysis is to predict future values based on past values.
 
