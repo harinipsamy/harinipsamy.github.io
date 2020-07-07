@@ -38,9 +38,9 @@ weak-stationarity: when both mean and the autocovariance of the time series are 
 A time series may be non-stationary due either to the presence of a unit root or of a deterministic trend. 
 
 
-### Trend-stationarity
+#### Trend-stationarity
 When a time series is non-stationary due to a deterministic trend. Can be transformed to stationary process by differencing or removing seaonality
-### Unit root
+#### Unit root
 The stochastic process with a unit root are not mean-reverting.
 
 ## Correlation and Autocorrelation
@@ -69,7 +69,7 @@ to make stock data more normal and stationary - use log returns
 
 # AR models
 
-## What it is
+### What it is
 
 tries to fit a line on previous values. 
 
@@ -89,17 +89,43 @@ r_t = phi_0 + phi_1 r_t-1 +... + phi_p r_t-p + a_t
 a_t is white noise.
 
 
-## Properties
+### Properties
 The ACF of a weakly stationary AR(1) series decays exponentially with rate phi_1.
+Stationarity:
+### Identifying order
+Two methods: 
+1) PACF: PACF of a stationary time series is a function of its ACF. For an AR(p) model, the lag p sample should not be zero but should be zero for all n>p. In other words,for an AR(p) series, the sample PACF cuts off at lag p.
+2) Information criterion:AIC and BIC are two measures based on likelihood to determine the order of p of an AR series. The smaller the value, the better and usually the smallest AIC/BIC values may be considered to identify p. AIC and BIC may identify different lags as p, in which case we must use our judgement to determine the order.
 
-## Identifying order
-## Estimation
-## Forecasting
+#### Model checking
+A fitted model must be checked for inadequacies. If the model is adequate, then the residual series will be white noise. The ACF and Ljung-Box test may be used on the residuals to check if its close to white noise.  
+
+### Goodness of Fit
+goodness of fit of a stationary model is measured by R square (R^2) defined as:
+R^2 = 1- residual sum of squares/total sum of squares.
+Typically, a larger R^2 indicates closer fit to data. But this is only true for stationary time series. R^2 is a nondecreasing function of the number of parameters used. To overcome this, an adjusted R^2 is used, but the values don't lie between 0 and 1:
+Adj R^2 = 1 - variance of residuals/variance of r_t
+
+### Forecasting
 
 
 ## vector autoregressive model.
 
-# MA
+# Moving-Average models
+MA(q) model:
+r_t = c_0 + a_t - Theta_1 a_t-1 - theta_2 a_t-2- ...- theta_q a_t-q
+c_0 is a constant. {a_t} is white noise series
+
+### Properties
+
+Moving-average models are always weakly stationary. 
+ACF of MA(q) model cuts off at lag q. 
+
+### Identifying order
+ACF is used to determine the order of MA model. For a MA(q) model, the ACF at q notequalto 0, but is equal to 0 for all l> q.
+Unlike the sample PACF, sample ACF provides information on the nonzero MA lags of the model.
+
+
 
 # ARMA
 
