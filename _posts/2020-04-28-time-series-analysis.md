@@ -35,6 +35,7 @@ A time series is said to be stationary if the joint probability distribution doe
 
 weak-stationarity: when both mean and the autocovariance of the time series are time invariant. In other words, we can say a time-series is weakly stationary if its first moment (mean) and second moment (variance) are constant. Stock return series are weakly stationary. If the time series is normally distributed, then weak stationarity is equivalent to strict stationarity.
 
+For a stationary series, the multistep-ahead forecasts converge to the mean of the series and the variance of forecast errors converge to the variance of the series, as the forecast period increases. 
 A time series may be non-stationary due either to the presence of a unit root or of a deterministic trend. 
 
 
@@ -91,6 +92,7 @@ a_t is white noise.
 
 ### Properties
 The ACF of a weakly stationary AR(1) series decays exponentially with rate phi_1.
+For an AR series to be stationary, all of its characteristic roots must be less than |1|
 Stationarity:
 ### Identifying order
 Two methods: 
@@ -127,9 +129,27 @@ Unlike the sample PACF, sample ACF provides information on the nonzero MA lags o
 
 
 
-# ARMA
+# Autoregressive Moving-Average (ARMA) models
 
-# ARIMA
+ARMA models combine AR and MA models. It is relevant in volatility modeling. 
+
+ARMA(1,1) model:
+
+r_t - phi_1 r_t-1 = phi_0 + a_t - phi_1 a_t-1
+
+ARMA(p,q) model:
+
+r_t = phi_0 + sum{i=1}{p} phi_i r_t-i + a_t - sum{i=1}{q} phi_i a_t-i
+
+{a_t} is white noise. 
+
+
+ACF and PACF are not useful in determining the order of an ARMA model. Instead, Extended Auto-correlation function (EACF) is used. It is a table with both AR and MA and for an ARMA(p,q) model, the upper left start of the triangle of Os will be the (p,q) position. 
+
+# Unit-root nonstationarity
+
+Interest rates, forex rates, price series of an asset/product tend to be nonstationary. Random walk model is another example of unit-root nonstationary time series.
+
 
 # ML methods - Kalman & particle filters
 
