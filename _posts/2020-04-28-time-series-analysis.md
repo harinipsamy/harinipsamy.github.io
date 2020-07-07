@@ -11,13 +11,23 @@ tags:
 Overview of time series analysis topics covered in this post:
 
 AutoRegression
+
 MovingAverages
+
 ARCH and GARCH models
+
 Kalman filters
+
 Particle filters
 Recurrent Neural Networks
 
 # Concepts relevant to time series analysis
+
+## Moments of a Random Variable
+
+The first moment is the mean. The second moment is its variance. The first and second moments of a random variable uniquely determine a normal distribution. For other distributions, higher order moments are also relevant.
+
+The third moment measures the symmetry of the random variable with respect to its mean, and is referred to as skewness. The fourth moment measures the tail behavior of the random variable and is called as the kurtosis. Kurtosis is 3 for a normal distribution. A distribution with positive excess kurtosis (kurtosis greater than 3) has heavy tails and is leptokurtic. It means that it has more extreme values. A distribution with negative excess kurtosis has short tails and is said to be platykurtic.
 
 ## Stationarity
 
@@ -28,9 +38,9 @@ weak-stationarity: when both mean and the autocovariance of the time series are 
 A time series may be non-stationary due either to the presence of a unit root or of a deterministic trend. 
 
 
-### trend-stationarity
+### Trend-stationarity
 When a time series is non-stationary due to a deterministic trend. Can be transformed to stationary process by differencing or removing seaonality
-### unit root
+### Unit root
 The stochastic process with a unit root are not mean-reverting.
 
 ## Correlation and Autocorrelation
@@ -40,12 +50,15 @@ Correlation coefficient between two random variables X and Y:
 <img src="https://latex.codecogs.com/svg.latex?\rho_{x,y} = \frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}">
 
 Autocorrelation function (ACF): 
-The correlation coefficient between <img src="https://latex.codecogs.com/svg.latex?r_t"> and <img src="https://latex.codecogs.com/svg.latex?r_{t-n}"> is called the lag-n autocorrelation of <img src="https://latex.codecogs.com/svg.latex?r_{t}">, where <img src="https://latex.codecogs.com/svg.latex?r_{n}"> is a weakly stationary return series.
+The correlation coefficient between <img src="https://latex.codecogs.com/svg.latex?r_t"> and <img src="https://latex.codecogs.com/svg.latex?r_{t-n}"> is called the lag-n autocorrelation of <img src="https://latex.codecogs.com/svg.latex?r_{t}">, where <img src="https://latex.codecogs.com/svg.latex?r_{n}"> is a weakly stationary return series. It refers to the correlations between a variable and its past values.
 
 <img src="https://latex.codecogs.com/svg.latex?\rho_{n} = \frac{Cov(r_t,r_{t-n})}{Var(r_t)}">
 
 A linear time series model can be characterized by its ACF.
 
+The linear dependence of current return r_t on the remote past return r_t-n diminishes for large n.
+
+Under the efficient market assumption, there should be zero autocorrelations as the asset returns are not predictable.
 
 that is they have a constant mean and variance.that is they have a constant mean and variance.
 
@@ -54,7 +67,9 @@ stock prices are non-stationary - mean and SD of data changes over time. goal of
 
 to make stock data more normal and stationary - use log returns 
 
-# AR
+# AR models
+
+## What it is
 
 tries to fit a line on previous values. 
 
@@ -64,6 +79,23 @@ we define AR model based on its lag. the no. of past values used in the AR model
 if we use 1 previous value to predict, the model is called AR lag 1 model. if we use 2 previous values to predict the current value and ignore the older values, it's called AR lag 2 model.
 
 if coefficients are likely zero,we can remove that from the equation. 
+
+AR(1) model is similar to simple linear regression model in which r_t is the dependent variable and r_t-1 is the explanatory variable:
+r_t = phi_0 + phi_1 r_t-1 + a_t
+
+A generalized AR(p) model is in the same form as a multiple linear regression model with lagged values as the explanatory variables:
+r_t = phi_0 + phi_1 r_t-1 +... + phi_p r_t-p + a_t
+
+a_t is white noise.
+
+
+## Properties
+The ACF of a weakly stationary AR(1) series decays exponentially with rate phi_1.
+
+## Identifying order
+## Estimation
+## Forecasting
+
 
 ## vector autoregressive model.
 
