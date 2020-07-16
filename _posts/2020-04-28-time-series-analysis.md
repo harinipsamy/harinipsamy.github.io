@@ -33,7 +33,7 @@ The third moment measures the symmetry of the random variable with respect to it
 
 ## Stationarity
 
-A time series is said to be stationary if the joint probability distribution does not change under time shift. For example, a time series <img src="https://latex.codecogs.com/svg.latex?\r_t"> `r<sub>t</sub>` is stationary if the joint distribution of (r_t1,r_t2,...r_tn) is same as the joint probability distribution of say (r_t1+1, r_t2+1,...rtn+1). 
+A time series is said to be stationary if the joint probability distribution does not change under time shift. For example, a time series <img src="https://latex.codecogs.com/svg.latex?r_t"> r<sub>t</sub> `r<sub>t</sub>` is stationary if the joint distribution of (r_t1,r_t2,...r_tn) is same as the joint probability distribution of say (r_t1+1, r_t2+1,...rtn+1). 
 
 weak-stationarity: when both mean and the autocovariance of the time series are time invariant. In other words, we can say a time-series is weakly stationary if its first moment (mean) and second moment (variance) are constant. Stock return series are weakly stationary. If the time series is normally distributed, then weak stationarity is equivalent to strict stationarity.
 
