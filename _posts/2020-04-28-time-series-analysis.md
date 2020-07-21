@@ -67,7 +67,7 @@ AR(1) model is similar to simple linear regression model in which <img src="http
 
 A generalized AR(p) model is in the same form of a multiple linear regression model with lagged values as the explanatory variables:
 
-<img src="https://latex.codecogs.com/svg.latex?r+t = \phi_0 + \phi_1 r_{t-1} + ... + \phi_p r_{t-p) + a_t, where a_t is the white noise">
+<img src="https://latex.codecogs.com/svg.latex?r+t = \phi_0 + \phi_1 r_{t-1} + ... + \phi_p r_{t-p) + a_t,\ where\ a_t\ is\ the\ white\ noise">
 
 
 ### Properties
