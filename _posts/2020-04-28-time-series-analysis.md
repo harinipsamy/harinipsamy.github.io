@@ -131,7 +131,7 @@ ARMA(1,1) model:
 
 ARMA(p,q) model:
 
-<img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + \sum{i=1}{p} \phi_i r_t-i + a_t - \sum{i=1} {q} \phi_i a_{t-i},\ where\ a_t\ is\ white\ noise">
+<img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + \sum_{i=1}^{p} \phi_i r_t-i + a_t - \sum_{i=1}^ {q} \phi_i a_{t-i},\ where\ a_t\ is\ white\ noise">
 
 
 
