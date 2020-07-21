@@ -67,7 +67,7 @@ AR(1) model is similar to simple linear regression model in which <img src="http
 
 A generalized AR(p) model is in the same form of a multiple linear regression model with lagged values as the explanatory variables:
 
-<img src="https://latex.codecogs.com/svg.latex?r+t = \phi_0 + \phi_1 r_{t-1} + ... + \phi_p r_{t-p) + a_t,\ where\ a_t\ is\ the\ white\ noise">
+<img src="https://latex.codecogs.com/svg.latex?r+t = \phi_0 + \phi_1 r_{t-1} + ... + \phi_p r_{t-p} + a_t,\ where\ a_t\ is\ the\ white\ noise">
 
 
 ### Properties
@@ -91,12 +91,12 @@ A fitted model must be checked for inadequacies. If the model is adequate, then 
 
 goodness of fit of a stationary model is measured by R square (R^2) defined as:
 
-<img src="https://latex.codecogs.com/svg.latex?R^2 = 1 - \frac{Residual sum of squares}{Total sum of sqares}">
+<img src="https://latex.codecogs.com/svg.latex?R^2 = 1 - \frac{Residual\ sum\ of\ squares}{Total\ sum\ of\ squares}">
 
 
 Typically, a larger R<sup>2</sup> indicates closer fit to data. But this is only true for stationary time series. R^2 is a nondecreasing function of the number of parameters used. To overcome this, an adjusted-R<sup>2</sup> is used, but the values don't lie between 0 and 1:
   
-<img src="https://latex.codecogs.com/svg.latex?Adjusted R^2 = 1 - \frac{Variance of residuals}{Variance of r_t}">
+<img src="https://latex.codecogs.com/svg.latex?Adjusted\ R^2 = 1 - \frac{Variance\ of\ residuals}{Variance\ of\ r_t}">
 
 
 
@@ -131,7 +131,7 @@ ARMA(1,1) model:
 
 ARMA(p,q) model:
 
-<img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + sum{i=1}{p} \phi_i r_t-i + a_t - sum{i=1} {q} \phi_i a_{t-i},\ where\ a_t\ is\ white\ noise">
+<img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + \sum{i=1}{p} \phi_i r_t-i + a_t - \sum{i=1} {q} \phi_i a_{t-i},\ where\ a_t\ is\ white\ noise">
 
 
 
