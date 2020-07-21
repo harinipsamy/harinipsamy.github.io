@@ -10,20 +10,17 @@ tags:
 ---
 
 
-<!-- wp:paragraph -->
-<p>This post documents my learning of lesson NLP, as part of nanodegree: AI in Algorithmic trading</p>
-<!-- /wp:paragraph -->
+
+<p>This post documents my learning of lesson NLP, as part of nanodegree: AI in Algorithmic trading.</p>
 
 <!-- wp:paragraph -->
-<p>The concept of NLP fascinates me. But I also have always struggled with grammar of a language and the rules of sentences construction - both in Tamil and English, the two languages I am most familiar with. The fact that application of NLP as a ML technique involves in-depth understanding of language construction scares me. I hope I come out of this exercise wiser about grammar and what terms like preposition and article means as well as how to take advantage of the rules to analyze texts.</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
 <h4><strong>Backus-Naur Form</strong></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>As part of learning a programming language, we learn it's grammar. For example, consider the following line of code in python:</p>
+<p>As part of learning a programming language, we learn the its grammar. For example, consider the following line of code in python:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:syntaxhighlighter/code {"language":"python"} -->
@@ -35,7 +32,7 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>It has grammar/ rules. The rules are that strings should be within quotes and if we want to print a statement, we should enclose them in parenthesis (Python3). </p>
+<p>It has grammar/ rules. The rules are that strings should be within quotes and if we want to print a statement, we should enclose them in parenthesis (Python 3). </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -51,20 +48,16 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The languages we use have similar grammatical rules. While humans can understand each other even if the language strays from the correct grammatical rules, computers cannot. How can this be circumvent?</p>
+<p>The languages we use have similar grammatical rules. While humans can understand each other even if the language strays from the correct grammatical rules, computers cannot. It can be circumvented by: ?</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li>process words and phrases to identify keywords, Parts of Speech, named entities and quantities, among others</li><li> extract relevant parts based on the above process</li><li>Analyze overall document</li></ul>
+<ul><li>Process words and phrases to identify keywords, Parts of Speech, named entities and quantities, among others</li><li> Extract relevant parts based on the above process</li><li>Analyze overall document</li></ul>
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
 <h4>Counting number of words in a text</h4>
 <!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>So, let's dive into NLP by simply counting words from a text.</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Consider the following text:</p>
@@ -79,7 +72,7 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:syntaxhighlighter/code {"language":"python"} -->
-<pre class="wp-block-syntaxhighlighter-code">t.split(' ')</pre>
+<pre class="wp-block-syntaxhighlighter-code">text.split(' ')</pre>
 <!-- /wp:syntaxhighlighter/code -->
 
 <!-- wp:paragraph -->
@@ -91,7 +84,7 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>As we can see from the given text, simply splitting the words by white space would not be effective; ham and plain in line 4 are to be considered as separate words, whereas, splitting them by white space would not separate them. To split words, we will use regex.</p>
+<p>As we can see from the given text, simply splitting the words by white space would not be effective; ham and plain in line 4 are to be considered as separate words, whereas, splitting them by white space would not separate them. To split words, we will use regex:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:syntaxhighlighter/code {"language":"python"} -->
@@ -121,12 +114,10 @@ tags:
 words = re.findall(r'\w+',t)
 for word in words:
     if word in counts:
-
         counts[word] = counts[word]+1
     else:
-        counts[word] = 1    counts[word] = counts[word]+1
-else:
-    counts[word] = 1</pre>
+        counts[word] = 1    
+        </pre>
 <!-- /wp:syntaxhighlighter/code -->
 
 <!-- wp:paragraph -->
@@ -147,86 +138,3 @@ sorted_counts[:10]
 #Top 10 least common words:
 sorted_counts[-10:]</pre>
 <!-- /wp:syntaxhighlighter/code -->
-
-<!-- wp:heading -->
-<h2>NLP Pipeline</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p><code>Text processing -&gt; feature extraction -&gt; modeling</code></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Text processing</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>html tags, urls, punctuations, highercases, stop words</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":4} -->
-<h4>Capturing text data</h4>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3><strong>Feature extraction</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>computers don't understand words. we need to feed the features (or importance) of words to build models</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>sorted(counts.items(),key=lambda count:count&#91;1])</code></pre>
-<!-- /wp:code -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:group -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:group -->
-
-<!-- wp:heading {"level":4} -->
-<h4>Ranking based on word count
-</h4>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>We can list the most and least common words in a text by using a simple for loop.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><code>#sort words based on counts:</code></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><code>sorted_word_counts = </code><br></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
