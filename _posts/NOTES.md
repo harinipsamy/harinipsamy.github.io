@@ -40,3 +40,114 @@ leverage: borrowing to invest -> either by borrowing cash or taking short positi
 
 
 
+
+
+
+
+
+
+
+
+## Rough - copied frm discarded materials for posts
+
+### Forecasting of AR,MA, ARMA models
+
+## vector autoregressive model.
+
+
+
+# ML methods - Kalman & particle filters
+
+particle filters do not assume normality and can work with non-linear data
+
+# ML methods - RNN
+
+used for NLP and time series. output of one regression is fed into input of another regression
+
+
+
+<!-- wp:heading -->
+<h2>NLP Pipeline</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><code>Text processing -&gt; feature extraction -&gt; modeling</code></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Text processing</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>html tags, urls, punctuations, highercases, stop words</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4>Capturing text data</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3><strong>Feature extraction</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>computers don't understand words. we need to feed the features (or importance) of words to build models</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>sorted(counts.items(),key=lambda count:count&#91;1])</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":4} -->
+<h4>Ranking based on word count
+</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>We can list the most and least common words in a text by using a simple for loop.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><code>#sort words based on counts:</code></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><code>sorted_word_counts = </code><br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+
+
