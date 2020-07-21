@@ -1,7 +1,6 @@
 ---
 title: "Time series analysis for quantitative trading"
 tags:
-  - blog
   - statistics
   - quantitative finance
   - AI in investment
@@ -125,7 +124,7 @@ ARMA models combine AR and MA models. It is relevant in volatility modeling.
 
 ARMA(1,1) model:
 
-<img src="https://latex.codecogs.com/svg.latex?r_t - \phi_1 r_{t-1} = \phi_0 + a_t - \phi_1 a_t-1">
+<img src="https://latex.codecogs.com/svg.latex?r_t - \phi_1 r_{t-1} = \phi_0 + a_t - \phi_1 a_{t-1}">
 
 
 
