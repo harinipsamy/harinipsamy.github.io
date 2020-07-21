@@ -19,7 +19,7 @@ The third moment measures the symmetry of the random variable with respect to it
 
 ## Stationarity
 
-A time series is said to be stationary if the joint probability distribution does not change under time shift. For example, a time series <img src="https://latex.codecogs.com/svg.latex?r_t"> is stationary if the joint distribution of <img src="https://latex.codecogs.com/svg.latex?(r_t1,r_t2,...r_tn)"> is same as the joint probability distribution of say, <img src="https://latex.codecogs.com/svg.latex?(r_t1+1, r_t2+1,...rtn+1)">. 
+A time series is said to be stationary if the joint probability distribution does not change under time shift. For example, a time series <img src="https://latex.codecogs.com/svg.latex?r_t"> is stationary if the joint distribution of <img src="https://latex.codecogs.com/svg.latex?(r_{t_1},r_{t_2},...r_{t_n})"> is same as the joint probability distribution of say, <img src="https://latex.codecogs.com/svg.latex?(r_{t_{1+1}}, r_{t_{2+1}},...r_{t_{n+1}})">. 
 
 Weak-stationarity is observed when both mean and the autocovariance of the time series are time invariant. In other words, we can say a time-series is weakly stationary if its first moment (mean) and second moment (variance) are constant. Stock return series are weakly stationary. If the time series is normally distributed, then weak stationarity is equivalent to strict stationarity.
 
@@ -56,21 +56,19 @@ Under the efficient market assumption, there should be zero autocorrelations as 
 
 # Auto-Regressive models
 
-<img src="https://latex.codecogs.com/svg.latex?y_t = a +B_1 y_{t-1} + B_2 y_{t-2} +..+ E_t">
-yt = a +B1 yt-1 + B2yt-2+..+Et
+<img src="https://latex.codecogs.com/svg.latex?y_t = a +B_1 y_{t-1} + B_2 y_{t-2} +..+ E_t,\ where\ E_t\ is\ the\ error\ term.">
 
-E<sub>t</sub> is the error term. 
- 
- 
 The model tries to fit a line on previous values. we define AR model based on its lag. the number of past values used in the AR model is its lag. If we use one previous value to predict the current value, the model is called AR lag-1 model (also represented as AR(1) model). if we use two previous values to predict the current value and ignore the older values, it's called AR lag-2 model.
 
 AR(1) model is similar to simple linear regression model in which <img src="https://latex.codecogs.com/svg.latex?r_t"> is the dependent variable and <img src="https://latex.codecogs.com/svg.latex?r_{t-1}"> is the explanatory variable:
+
 <img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + \phi_1 r_{t-1} + a_t">
-r_t = phi_0 + phi_1 r_t-1 + a_t
+
 
 A generalized AR(p) model is in the same form of a multiple linear regression model with lagged values as the explanatory variables:
+
 <img src="https://latex.codecogs.com/svg.latex?r+t = \phi_0 + \phi_1 r_{t-1} + ... + \phi_p r_{t-p) + a_t, where a_t is the white noise">
-r_t = phi_0 + phi_1 r_t-1 +... + phi_p r_t-p + a_t
+
 
 ### Properties
 
@@ -92,20 +90,22 @@ A fitted model must be checked for inadequacies. If the model is adequate, then 
 ### Goodness of Fit
 
 goodness of fit of a stationary model is measured by R square (R^2) defined as:
+
 <img src="https://latex.codecogs.com/svg.latex?R^2 = 1 - \frac{Residual sum of squares}{Total sum of sqares}">
-R^2 = 1- residual sum of squares/total sum of squares.
-Typically, a larger R<sup>2</sup> indicates closer fit to data. But this is only true for stationary time series. R^2 is a nondecreasing function of the number of parameters used. To overcome this, an adjusted-R<sup>2</sup? is used, but the values don't lie between 0 and 1:
+
+
+Typically, a larger R<sup>2</sup> indicates closer fit to data. But this is only true for stationary time series. R^2 is a nondecreasing function of the number of parameters used. To overcome this, an adjusted-R<sup>2</sup> is used, but the values don't lie between 0 and 1:
+  
 <img src="https://latex.codecogs.com/svg.latex?Adjusted R^2 = 1 - \frac{Variance of residuals}{Variance of r_t}">
-Adj R^2 = 1 - variance of residuals/variance of r_t
+
 
 
 # Moving-Average models
 
 MA(q) model:
-<img src="https://latex.codecogs.com/svg.latex?r_t = c_0 + a_t - \theta_1 a_{t-1} - \theta_2 a_{t-2} - ... - \theta_q a_{t-q}, where c_0 is a constant and a_t is the white noise series">
 
-r_t = c_0 + a_t - Theta_1 a_t-1 - theta_2 a_t-2- ...- theta_q a_t-q
-c_0 is a constant. {a_t} is white noise series
+<img src="https://latex.codecogs.com/svg.latex?r_t = c_0 + a_t - \theta_1 a_{t-1} - \theta_2 a_{t-2} - ... - \theta_q a_{t-q},\ where\ c_0\ is\ a\ constant\ and\ a_t\ is\ the\ white\ noise\ series">
+
 
 ### Properties
 
@@ -114,7 +114,8 @@ c_0 is a constant. {a_t} is white noise series
 
 ### Identifying order
 
-ACF is used to determine the order of MA model. For a MA(q) model, the ACF at <img src="https://latex.codecogs.com/svg.latex?q \notequalto 0, but q = 0 for all l>q"> q notequalto 0, but is equal to 0 for all l> q.
+ACF is used to determine the order of MA model. For a MA(q) model, the ACF at <img src="https://latex.codecogs.com/svg.latex?q \neq 0,\ but\ q = 0\ for\ all\ l>q"> 
+
 Unlike the sample PACF, sample ACF provides information on the nonzero MA lags of the model.
 
 
@@ -123,13 +124,15 @@ Unlike the sample PACF, sample ACF provides information on the nonzero MA lags o
 ARMA models combine AR and MA models. It is relevant in volatility modeling. 
 
 ARMA(1,1) model:
+
 <img src="https://latex.codecogs.com/svg.latex?r_t - \phi_1 r_{t-1} = \phi_0 + a_t - \phi_1 a_t-1">
 
-r_t - phi_1 r_t-1 = phi_0 + a_t - phi_1 a_t-1
+
 
 ARMA(p,q) model:
-<img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + sum{i=1}{p} \phi_i r_t-i + a_t - sum{i=1} {q} \phi_i a_{t-i}, where a_t is white noise">
-r_t = phi_0 + sum{i=1}{p} phi_i r_t-i + a_t - sum{i=1}{q} phi_i a_t-i
+
+<img src="https://latex.codecogs.com/svg.latex?r_t = \phi_0 + sum{i=1}{p} \phi_i r_t-i + a_t - sum{i=1} {q} \phi_i a_{t-i},\ where\ a_t\ is\ white\ noise">
+
 
 
 ACF and PACF are not useful in determining the order of an ARMA model. Instead, Extended Auto-correlation function (EACF) is used. It is a table with both AR and MA and for an ARMA(p,q) model, the upper left start of the triangle of Os will be the (p,q) position. 
