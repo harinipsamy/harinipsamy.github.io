@@ -10,9 +10,9 @@ tags:
 ---
 
 # Stock returns
-Stock returns are calculated as <img src = "https://latex.codecogs.com/svg.latex?r = \frac{P_t - P_{t-1}}{P_{t-1}}"> `r = (Pt - Pt-1)/Pt-1`
-log return or natural log return <img src = "https://latex.codecogs.com/svg.latex?R = \ln\frac{P_t}{P_{t-1}}"> `R = ln(Pt/Pt-1)`
-If the value of r is small <img src = "https://latex.codecogs.com/svg.latex? |r| << 1, \ln(r+1) ~ r">   `(|r| <<1` , `ln(r+1) ~ r`
+Stock returns are calculated as <img src = "https://latex.codecogs.com/svg.latex? r = \frac{P_t - P_{t-1}}{P_{t-1}}"> 
+log return or natural log return <img src = "https://latex.codecogs.com/svg.latex? R = \ln\frac{P_t}{P_{t-1}}"> 
+If the value of r is small <img src = "https://latex.codecogs.com/svg.latex? |r| << 1, \ln(r+1) ~ r">  
 
 # why log returns?
 * Log returns are great for compounding:
