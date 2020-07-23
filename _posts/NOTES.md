@@ -149,5 +149,49 @@ used for NLP and time series. output of one regression is fed into input of anot
 <p></p>
 <!-- /wp:paragraph -->
 
+stock returns - left skewed and fat tailed - extreme negative returns happen in more frequency
+
+QQ plot (quantile quantile plot) quantiles have same number of data points (as against a histogram which has same width
+
+
+
+
+# Regression
+
+Independent variable - stock returns
+dependent variable - unemployment rate, interest rates, consumer spending reports
+
+y = ax + b
+slope or coefficient = a, intercept = b
+
+OLS - finds line that fits data with minimum distance.
+residuals (actual - predicted) should be normally distributed
+## evaluating model
+- R-squared
+- adjusted Rsqured
+- F-test
+
+multiple regression and multivariate multiple regression
+
+
+using reg. to predict stoc returns is difficulst coz of lwo signal-noise ratio. also, models are sensitive to design choices in the model. 
+
+still, reg is imp. coz - time series analysis, NNs are a bunch of regression blocks
+
+
+## statistical arbitrage
+
+We can also have stock returns as independent and dependent variables. predict stock returns of one stock by using stock returns of another stock.
+simulatneously buying and selling related stocks based on their relationship.
+
+signal to noise ration of financial data is very low. predictive models tend to overfit data.
+
+
+
+Q. why and how can the numberator be > than the denominator? and why can't they in normal circumstances?
+
+
+
+
 
 
