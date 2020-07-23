@@ -11,10 +11,13 @@ tags:
 
 # Stock returns
 Stock returns are calculated as <img src = "https://latex.codecogs.com/svg.latex? r = \frac{P_t - P_{t-1}}{P_{t-1}}"> 
+
 log return or natural log return <img src = "https://latex.codecogs.com/svg.latex? R = \ln\frac{P_t}{P_{t-1}}"> 
+
 If the value of r is small <img src = "https://latex.codecogs.com/svg.latex? |r| << 1, \ln(r+1) ~ r">  
 
 # why log returns?
+
 * Log returns are great for compounding:
 $100 grows to `$100 x (1 + 0.04/252)^252 = 104.08` at 4% interest compounded daily
 which is close to `$100 x e^0.04 = $104.08`
