@@ -20,25 +20,15 @@ tags:
 
 We use various hypothesis tests to test the statistical models built. These tests assume that the distribution of data is normal. If data isn't normally distributed, these tests might tell us that the model is valid when in fact, it isn't. It is therefore, important to ensure that the data fits normal distribution.
 
+We can roughly check visually if the data follows a normal distribution by plotting its histogram and compare it with a plot of normal distribution.
+
+We can also use Box-Whisker plot to check for normality. Box plot helps to see symmetry in our data. Normal distributions are symmetric around their mean. The three dividing lines group the data into 4 and are called as Quartiles. The four groups are called as Quantiles. The second line represents the median. Inter Quartile Range can be calculated by 3rd Quartile - 1st Quartile. Points lying outside the whiskers are outliers.
+
+QQ plot (Quantile - Quantile plot) can also be used for checking normality. It checks if the shape of the distribution of data matches the shape of a distribution function. To decide if the data is normally distributed, we can compare the data distribution with distribution of a normal density function. 
 
 
-If we say a data is normally distr
-box plot to check for normality.
-quantiles and quartiles, whiskers, outliers, interquartile range
+There are also hypothesis tests to check for normality - Shapiro-Wilk test, D'Agostino-Pearson test and Kolmogorov-Smirnov test. If the p-value is less than alpha (say, 0.05), then we can say with 95% confidence that the data is NOT normally distributed. 
 
-hypothesis tests for normality
-Shapiro-Wilk
-D'Agostino-Pearson
-
-hypothesis test for similarity of distri
-Kolmogorov-Smirnov 
-
-
-
-
-stock returns - left skewed and fat tailed - extreme negative returns happen in more frequency
-
-QQ plot (quantile quantile plot) quantiles have same number of data points (as against a histogram which has same width
 
 ## transform not-normal data
 feed data into log function or take log of data
