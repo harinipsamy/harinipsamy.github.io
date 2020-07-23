@@ -10,15 +10,9 @@ tags:
 #image: .jpg
 ---
 
-<p>This post touches upon topics such as:</p>
-<!-- wp:list -->
-<ul><li>Checking if the data is normally distributed</li><li>Stationarity</li><li>Transforming data to normally distributed stationary dataset</li><li>Importance of Linear regression in trading strategies</li></ul>
-<!-- /wp:list -->
-<p></p>
+We use various hypothesis tests to test the statistical models built. These tests assume that the distribution of data is normal. If data isn't normally distributed, these tests might tell us that the model is valid when in fact, it isn't. It is therefore, important to ensure that the data fits normal distribution.
 
 ### Checking if data is normally distributed
-
-We use various hypothesis tests to test the statistical models built. These tests assume that the distribution of data is normal. If data isn't normally distributed, these tests might tell us that the model is valid when in fact, it isn't. It is therefore, important to ensure that the data fits normal distribution.
 
 We can check visually if the data follows a normal distribution by plotting its histogram and compare it with a plot of normal distribution. We can also use Box-Whisker plot to check for normality. Box plot helps to see symmetry in our data. Normal distributions are symmetric around their mean. The three dividing lines group the data into 4 and are called as Quartiles. The four groups are called as Quantiles. The second line represents the median. Inter Quartile Range can be calculated by 3rd Quartile - 1st Quartile. Points lying outside the whiskers are outliers. QQ plot (Quantile - Quantile plot) can also be used for checking normality. It checks if the shape of the distribution of data matches the shape of a distribution function. To decide if the data is normally distributed, we can compare the data distribution with distribution of a normal density function. 
 
@@ -34,12 +28,11 @@ To get a homoskedastic data, take time-difference. either take difference or tak
 
 <img src="https://latex.codecogs.com/svg.latex?T(x) = \frac{(x^\lambda -1)}{\lambda}">
 
-T(x) = \frac{(x^\lambda -1)}{\lambda}
 
 <img src="https://latex.codecogs.com/svg.latex? \lambda"> is a constant we can choose. if <img src="https://latex.codecogs.com/svg.latex? \lambda"> is zero, then the transformation data is just the natural log:
 
 <img src="https://latex.codecogs.com/svg.latex?T(x) = \ln(x)">
-T(x) = ln(x)
+
 
 
 
