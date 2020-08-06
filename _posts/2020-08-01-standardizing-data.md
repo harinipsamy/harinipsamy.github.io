@@ -7,25 +7,45 @@ tags:
   
 ---
 
-Standardizing data is a very import step in feature engineering. This is also crucial in factor modeling. In this post, we look at how and why it is done.
+Standardizing data is a very import step in feature engineering. This is also crucial in factor modeling. In this post, we look at why and how it is done.
 
 
 
-some ways to standardize datasets
-De-meaning:
-Transform the data such that the mean of the dataset is zero. This process is called de-meaning, as we subtract (or remove) the sample mean from each observation.
-Normalization:
-2) Scaling- normalize the range of values of features. It allows for comparison between two variables which otherwise may have different range of values, to avoid giving too much importance to features with large values.  
+Some ways to standardize datasets
+### De-meaning
+
+Transform the data such that the mean of the transformed dataset is zero. This process is called de-meaning, as we subtract (or remove) the sample mean from each observation.
+
+### Normalization
+
+Scaling is a method used to normalize the range of values of features. It allows for comparison between two variables which otherwise may have different range of values,and to avoid giving too much importance to features with large values.  
+
+There are different methods to scale features, based on the required purpose:
+
+##### Min-max normalization
+
+This is used to rescale the range of values. To rescale the data in range \[a,b], the following formula is applied for dataset x:
+
+ <img src="https://latex.codecogs.com/svg.latex? a + \frac{(x-min(x))(b-a)}{max(x)-min(x)}"> 
+
+##### Standardization
+
+Feature standardization transforms the data to have mean = 0 and variance = 1. This is also called as z-score normalization
+
+<img src="https://latex.codecogs.com/svg.latex? \frac{(x-\mu)}{\sigma},\ where\ \mu\ and\ \sigma\ are\ mean\ and\ standard\ deviation\ of\ the\ data,\ respectively."> 
+
+##### Rescaling with absolute value
+
+This transforms the data such the sum of absolute values is one. It's done by dividing each value by it's absolute value:
+
+ <img src="https://latex.codecogs.com/svg.latex?\frac{x}{|x|}"> 
+
 
 
 ## Standardizing a factor in factor model
 
 1. Sum of weights to sum to 0 -> find mean of factor values of all the stocks. Then subtract mean from each of the factor values (de-mean)
-2. Sum of absolute value of weights sum to 1 -> rescale val: divide each value by a scalar. this scalar is sum of the absolute values. There are different methods to scale features, based on the required purpose:
-1. min-max normalization
-2. Mean normalization
-3. standardization
-4. Rescaling with absolute value
+2. Sum of absolute value of weights sum to 1 -> rescale val: divide each value by a scalar. this scalar is sum of the absolute values.
 
 can be done in any order
 
