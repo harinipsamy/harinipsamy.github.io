@@ -4,6 +4,8 @@ tags:
   - Data Science
   - Analysis
   - Machine Learning
+  - Factor modeling
+  - Quantitative Finance
   
 ---
 
@@ -12,13 +14,14 @@ Standardizing data is a very import step in feature engineering. This is also cr
 
 
 Some ways to standardize datasets
+
 ### De-meaning
 
 Transform the data such that the mean of the transformed dataset is zero. This process is called de-meaning, as we subtract (or remove) the sample mean from each observation.
 
 ### Normalization
 
-Scaling is a method used to normalize the range of values of features. It allows for comparison between two variables which otherwise may have different range of values,and to avoid giving too much importance to features with large values.  
+Scaling is a method used to normalize the range of values of features. It allows for comparison between two variables which otherwise may have different range of values, and to avoid giving too much importance to features with large values.  
 
 There are different methods to scale features, based on the required purpose:
 
@@ -44,34 +47,20 @@ This transforms the data such the sum of absolute values is one. It's done by di
 
 ## Standardizing a factor in factor model
 
-1. Sum of weights to sum to 0 -> find mean of factor values of all the stocks. Then subtract mean from each of the factor values (de-mean)
-2. Sum of absolute value of weights sum to 1 -> rescale val: divide each value by a scalar. this scalar is sum of the absolute values.
+We can convert the raw factor values into a standardized factor. To standardize the factor, the following two conditions are required to be satisfied:
 
-can be done in any order
+#### 1. Sum of weights should sum to 0
 
-### why?
-1. de-meaning
-factor values will be used as stock weights. we want the portfolio to be dollar neutral ($ long = $ short). A $ neutral port., is approx market neutral. we assume that On avg., beta of each stock = 1. (beta = how much stock moves when the market moves)
+This is done by finding mean of factor values of all the stocks, and then subtracting mean from each of the factor values (de-mean).
 
-Notional/trade book value = $ amt associated with port. : $ val. of inv. in a stock = wt. of stock in the port * notional
-
-In theoritical $ neutral port, inv = $0. but in real life, there are margin cost for shorting positions, transac cost, etc
-
-converting port to $ neutral port.:
-
-port: A = 0.6 B = 0.4 -> this is heavier on the positive side
-$ neutral port: shift the stock wts until the wts in positive side and negative side are balanced. -> A=0.1 B = -0.1
-
-the relative difference of the wts of stocks in both port will be same: 0.6-0.4 = 0.2 and 0.1-(-0.1) = 0.2
-
-This is achieved by de-meaning ( taking average of the wts and subtracting the avg from each of the wts)
-
-2. rescaling
-to make the leverage ratio =1 for our port.
-
-leverage: borrowing to invest -> either by borrowing cash or taking short positions
+When the factor values are used as stock weights, we want the portfolio to be dollar neutral, that is, the dollar amount of all long positions is equal to the dollar amount of all short positions. This helps in testing the predictive power of the factor while excluding the influence of the overall market. A dollar neutral portfolio is close to market neutral. We assume that on an average beta of each stock is 1. 
 
 
+#### 2. Sum of absolute value of weights should sum to 1 
 
+This condition is achieved by rescaling values. Each value is divided by a scalar, which is sum of the absolute values. 
 
+Rescalig is done to make the leverage ratio equal to 1 for our portfolio. 
+
+The above steps can be done in any order to standardize the factors.
 
