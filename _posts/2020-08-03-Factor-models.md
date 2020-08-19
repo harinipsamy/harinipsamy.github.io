@@ -1,4 +1,6 @@
 
+
+
 explicit estimation of returns using returns and volatility - very noisy. therefore, we use drivers or mean returns and volatility for modeling.
 
 factor: list of numerical values - one for each stock - predictive of an aspect of performance of the stock in the future. 
