@@ -33,11 +33,18 @@ The most reliable way to measure incremental effect in marketing industry is thr
 - Can be tracked using promotional codes. but not entirely reliable if the person doesn't use the code. Also, the promo codes will help only when an order is placed. It is not helpful to track and analyze site traffic, especially of those who don't convert
 - Baked-in ads in podcast doesn't allow for change or splitting audience into buckets. we don't have control over who sees the ads or don't and as such, can't run experiements readily on them. Dynamic ads on the other hand, are very flexible and it is possible to set up experiments, although the revenue stream will start to dwindle and eventually stop with passage of time. 
 
-We can't use it to track site visits
+# Podcast marketing - how it's done
 
+- ad types - dynamic/baked-in
+- mid-roll, end-roll
+- payment for ads
 
+- data collection
 
-
+# how it can benefit an org
+- host loyalty
+- helps in brand value
+- aids other marketing channels - indirect benefit - coz we can't directly measure clicks through podcast
 
 
 
