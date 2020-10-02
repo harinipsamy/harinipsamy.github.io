@@ -35,9 +35,14 @@ The most reliable way to measure incremental effect in marketing industry is thr
 
 # Podcast marketing - how it's done
 
-- ad types - dynamic/baked-in
-- mid-roll, end-roll
-- payment for ads
+The show hosts air ads that are either baked-in to the pdocast episode, or dynamically inserted while the listener plays the epidsode. Both have their advantages and disadvantages. 
+
+Baked-in ads are considered a part of the episode and stays on the episode file forever. It has the advantage that the listeners find the transition into ads seemless, as the hosts weave it into the conversation. It also means that the advertiser may realize revenue as long as the episode is listened to, even years after the advertiser paid for the ad. They cannot be modified after the episode is released. Dynamic ads, on the other hand, are ads that are inserted into the slots alloted for ads at the time a podcast is played. Dynamic ads offer the advantage of the ad being relevant whenever the listener plays the episode. The ads can be changed as per the change in circumstances. The hosts have the opportunity to realize additional ad revenue for the same episode, if it is listened to long after it was released. The advertisers will stop realizing sale of their products after a time-period, as the ads will not be aired forever. The type of ads that your organization should prefer will depend upon the type of products, market interest, etc., but it's good to have both in your marketing campaign.
+
+The placement of the ads also play a role in capturing attention of the audience. The ads can be placed pre-roll, mid-roll and post-roll. Pre-roll ads are aired at the beginning of the episode, mid-roll, during, and post-roll, at the end of the episode. Mid-roll ads may have slightly more attention of the audience compared to pre-roll and post-roll.
+
+Payment for ads are usually based on the number of impressions that an episode can generate, and it's not unusuall for the podcast show to make good on the impressions promised by continuing to air the ad on future episodes if the numbers doesn't reach the target.
+
 
 - data collection
 
