@@ -19,7 +19,7 @@ I had a difficult time installing zipline, but it was fulfilling when I finally 
 
 There's a simple pip install and also option to install using conda install, if you are using Anaconda. 
 Installation instructions can be found here:
-[https://www.zipline.io/install.html] ("https://www.zipline.io/install.html")
+[https://www.zipline.io/install.html](https://www.zipline.io/install.html)
 
 I did create an environment for installing zipline, to ensure smooth funcitioning of the library package and to avoid conflict with other site-packages, although that's my usual practice for working on any project. Although zipline says it is supported in python versions 2.7 and 3.5, I couldn't install it in an environment with python=3.5. Ultimately, I was able to install it in an environment with python=2.7. If you are using a linux system like me, there's additional installations involved which can all be done in one line of code.
 
