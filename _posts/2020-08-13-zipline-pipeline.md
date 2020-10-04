@@ -40,12 +40,15 @@ zipline.data.bundles.bundles
 To run the algorithm in the beginner tutorial, there's no need to register the data bundle. All you need to do is run the code. It might be worth to note that if you downloaded the bundle with 'no benchmark', then you also need to change the magic line to include no benchmark, else it will throw an error.
 
 Change: 
-```python %%zipline --start 2016-1-1 --end 2018-1-1```
+```python 
+%%zipline --start 2016-1-1 --end 2018-1-1
+```
 
 to:
 
 ```python 
-%%zipline --start 2016-1-1 --end 2018-1-1 --no-benchmark```
+%%zipline --start 2016-1-1 --end 2018-1-1 --no-benchmark
+```
 
 in the tutorial. Also the data in the examples is not updated after about March 2018. So, to explore the functionality using hte library, stick to dates on or before March 2018. 
 
@@ -60,7 +63,9 @@ bundles.register('custom-data-bundle', ingest_func)
 ```
 Don't forget to set your environment path to include the the path where the bundle is located, or the library won't be able to locate the data:
 
-```python os.environ['ZIPLINE_ROOT'] = os.path.join('path/to/data/bundle')```
+```python 
+os.environ['ZIPLINE_ROOT'] = os.path.join('path/to/data/bundle')
+```
 
 
 There you go! You have just run your first algorithm using zipline. 
