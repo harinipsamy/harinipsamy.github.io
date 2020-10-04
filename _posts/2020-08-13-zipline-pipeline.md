@@ -26,7 +26,7 @@ I did create an environment for installing zipline, to ensure smooth funcitionin
 # First program
 
 Zipline's beginner tutorial is a great place to start, if you want to use zipline to backtest your data using python.
-https://www.zipline.io/beginner-tutorial
+[https://www.zipline.io/beginner-tutorial](https://www.zipline.io/beginner-tutorial)
 
 Before building the pipeline, we need to first download data bundle in command line. There are default bundles available through ziplien like 'quandl' and 'quantopian-quandl', but it is also possible to ingest custom data bundle. 
 
@@ -70,4 +70,4 @@ os.environ['ZIPLINE_ROOT'] = os.path.join('path/to/data/bundle')
 
 There you go! You have just run your first algorithm using zipline. 
 
-The full code can be found here: https://github.com/harinipsamy/Factor-Model/blob/master/first_algorithm_zipline.ipynb
+The full code can be found here: [https://github.com/harinipsamy/Factor-Model/blob/master/first_algorithm_zipline.ipynb](https://github.com/harinipsamy/Factor-Model/blob/master/first_algorithm_zipline.ipynb)
