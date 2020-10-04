@@ -1,13 +1,19 @@
 ---
 title: "Zipline - an Open source trading simulator by Quantopian"
-
+tags:
+   - Data Science
+   - Quantitative Finance
+   - AI in Investing
+   - Zipline
+   - Quantopian
+   - Stock market
 ---
 
 Zipline is an open source trading simulator by Quantopian. It can be used to backtest financial models offline. 
 
- It is built on python so it is very easy to look at the source modules in case you run into some issues while implementing your model. 
+It is built on python so it is very easy to look at the source modules in case you run into some issues while implementing your model. 
  
-I had a difficult time installing zipline. Zipline supports 
+I had a difficult time installing zipline, but it was fulfilling when I finally succeeded in installation and ran my first algorithm. 
 
 # Installation 
 
@@ -26,30 +32,36 @@ Before building the pipeline, we need to first download data bundle in command l
 
 Once the data is downloaded in command-line terminal, you can view if the bundles exist in in python (I am using Ipython kernel using Jupyter notebook) by executing:
 
-```
+```python
 import zipline
 zipline.data.bundles.bundles
 ```
 
-Once the data bundle is ingested, we need to register the bundle:
+To run the algorithm in the beginner tutorial, there's no need to register the data bundle. All you need to do is run the code. It might be worth to note that if you downloaded the bundle with 'no benchmark', then you also need to change the magic line to include no benchmark, else it will throw an error.
+
+Change: 
+```%%zipline --start 2016-1-1 --end 2018-1-1```
+
+to:
+
+```%%zipline --start 2016-1-1 --end 2018-1-1 --no-benchmark```
+
+in the tutorial. Also the data in the examples is not updated after about March 2018. So, to explore the functionality using hte library, stick to dates on or before March 2018. 
+
+# Custom data bundle
+
+If you intend to use custom data bundle, there are a few extra steps you need to do.
+
+Once the data bundle is ingested, the data bundle needs to be registered:
 ```
-ingest_func = bundles.csvdir.csvdir_equities(['daily'], 'quantopian-quandl')
-bundles.register('quantopian-quandl', ingest_func)
+ingest_func = bundles.csvdir.csvdir_equities(['daily'], 'custom-data-bundle')
+bundles.register('custom-data-bundle', ingest_func)
 ```
 Don't forget to set your environment path to include the the path where the bundle is located, or the library won't be able to locate the data:
 
 ```os.environ['ZIPLINE_ROOT'] = os.path.join('path/to/data/bundle')```
 
+
 There you go! You have just run your first algorithm using zipline. 
 
-
-
-
-
-
-
-
-
-
-
-
+The full code can be found here: https://github.com/harinipsamy/Factor-Model/blob/master/first_algorithm_zipline.ipynb
