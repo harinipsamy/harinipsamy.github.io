@@ -32,14 +32,16 @@ To run the query on a database, we need to be able to establish a connection to 
 
 # Using JDBC instant client
 
+Install driver from : https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
 
-   ## cx_Oracle
+Oracle provides rpm and zip files for installing the clients on a linux system. Debian needs files to be in .deb format to install. There are three ways to tackle this:
 
-   holy grail: https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html
+1. Install by converting rpm files to deb file
 
-   - Install driver from : https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
+2. Install rpm file directly using rpm
 
-   1. but only rpm format is available. we need .deb files for debian os
+3. Unzip file and work around the driver settings
+but only rpm format is available. we need .deb files for debian os
 
       1. https://www.howtoforge.com/converting_rpm_to_deb_with_alien 
       2. or just unzip a zip file and install. smh
