@@ -1,3 +1,5 @@
+
+
 # Accessing Oracle db from GCP instance
 
 # Steps
@@ -22,12 +24,6 @@
 
 
 
-## Starting fresh
-
-1. create a VM/notebook instance - skip if you already have one
-2. edit vm settings - networking -> select 'Networks shared with me (from bnile-ops-vpn-dev)' - its available for bnile-analysts project
-3. select dev-net-us-west1-1 in shared subnetwork
-4. click save/create
 
 Next step: trying first with pyodbc library..
 
@@ -36,36 +32,14 @@ Next step: trying first with pyodbc library..
 
 
 
-
-```python
----------------------------------------------------------------------------
-Error                                     Traceback (most recent call last)
-<ipython-input-9-c3b163270826> in <module>
-      1 dssprod_con = pyodbc.connect(Driver='{Oracle in OraClient11g_home1}', 
-----> 2                              DBQ='dssprod.BLUENILE.COM', UID='harini.palanisamy', PWD='9Bluenile9')
-
-Error: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'Oracle in OraClient11g_home1' : file not found (0) (SQLDriverConnect)")
+```
+Error: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'driver_name' : file not found (0) (SQLDriverConnect)")
 ```
 
 1. driver not found - should either install driver or install instant client to access driver
 2. odbcinst -j  #to get the odbc driver installed details
 3. nano /path/to/file #to open/view files
-
-## mysql connector/python
-
-
-
-1. https://docs.oracle.com/cd/E17952_01/connector-python-en/index.html
-
-2. installed: mysql server using pip
-
-3. ```python
-   DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'dssprod.bluenile.com' (110)
-   ```
-
-   Maybe mysql is not oracle sql. smh back to cx_Oracle
-
-   
+  
 
    ## cx_Oracle
 
@@ -195,15 +169,7 @@ Error: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'Oracle in Or
    odbc_update_ini.sh /etc /opt/oracle/ oracleodbc dssprod /home/jupyter/.odbc.ini
    ```
 
-   dsn = oracle
-
-   driver_name = oracle_driver
-
-   username=harini.palanisamy
-
-   odbcinst -j
-
-   
+  
 
    1. 
    2. 
