@@ -63,7 +63,7 @@ Detailed instructions for each option above is given in step 3.
 
 ### b. (optional) Download ODBC package
 
-   ![img/image-20201026164207873.png](img/image-20201026164207873.png)
+   ![img/image-20201026164207873.png](/img/image-20201026164207873.png)
 
 The rpm file needn't be downloaded. It is also possible to directly get the file from url (refer step 3). 
 
