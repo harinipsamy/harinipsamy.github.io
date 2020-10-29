@@ -61,7 +61,7 @@ Detailed instructions for each option above is given in step 3.
 
    ![image-20201026164019036](C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201026164019036.png)
 
-   
+   ![img/image-20201026164019036.png](/img/image-20201026164019036.png)
 
 ### b. (optional) Download ODBC package
 
