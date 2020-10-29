@@ -59,13 +59,11 @@ Detailed instructions for each option above is given in step 3.
 
 ### a. Download zip / rpm files 
 
-   ![image-20201026164019036](C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201026164019036.png)
-
    ![img/image-20201026164019036.png](/img/image-20201026164019036.png)
 
 ### b. (optional) Download ODBC package
 
-   ![image-20201026164207873](C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201026164207873.png)
+   ![img/image-20201026164019036.png](img/image-20201026164019036.png)
 
 The rpm file needn't be downloaded. It is also possible to directly get the file from url (refer step 3). 
 
