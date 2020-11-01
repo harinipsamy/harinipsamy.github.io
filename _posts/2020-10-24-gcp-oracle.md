@@ -293,8 +293,7 @@ Enter the values as shown in the image. The value for driver should match the na
 After entering the values, enter: `Ctrl+o` `Enter` `Ctrl+x`
 
 
-
-## Connecting to Oracle database
+# Connecting to Oracle database
 
 Import either an ODBC or JDBC connection library.
 
@@ -318,8 +317,7 @@ jdbc_con = cx_Oracle.connect("username/password@hostname:port/databasename"
 ```
 
 
-
-## Possible errors and some solutions
+# Possible errors and some solutions
 
 1. When you import, if you get a DatabaseError, contact dev ops. It's a network connection error and most often, just a simple refresh from their side will work
 
@@ -344,7 +342,7 @@ jdbc_con = cx_Oracle.connect("username/password@hostname:port/databasename"
      ```
 
      
-   # Resources
+# Resources
 
 Useful resources based on which this tutorial is constructed:
 
