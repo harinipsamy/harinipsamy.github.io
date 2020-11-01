@@ -258,10 +258,6 @@ We can go and update the files in the installation folder under /etc/.. but let'
 sudo nano /etc/odbcinst.ini
 ```
 
-
-
-<img src="C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201101104145557.png" alt="image-20201101104145557" style="zoom:50%;" />
-
 If you used the zip file, enter the following: 
 
 `[a_name_for_the_driver]`
