@@ -305,7 +305,7 @@ print(pyodbc.drivers()) # This line should print the driver that you initialized
 ```
 
 ```pytho
-odbc_con = pyodbc.connect(Driver='{oracle_driver}', DBQ='dssprod.BLUENILE.COM', UID='username', PWD='password')
+odbc_con = pyodbc.connect(Driver='{oracle_driver_name}', DBQ='dbq_name', UID='username', PWD='password')
 # You can skip the username and pwd parameters if you had already passed it in the odbc.ini file
 ```
 
