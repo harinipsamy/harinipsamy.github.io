@@ -73,11 +73,11 @@ The rpm file needn't be downloaded. It is also possible to directly get the file
 
 - Go to your Jupyter notebook instance -> upload zip/rpm files to the GCP instance home directory 
 
-  ![image-20201101101954057](C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201101101954057.png)
+  ![/img/image-20201101101954057.png](/img/image-20201101101954057.png)
 
 - Click the '+' button (new laucher) -> launch terminal
 
-  ![image-20201101102202405](C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201101102202405.png)
+  ![/img/image-20201101102202405.png](/img/image-20201101102202405.png)
 
 ## Step 3: Shell commands
 
@@ -250,8 +250,6 @@ Type the following to know the locations of the files required for the odbc driv
 odbcisnt -j
 ```
 
-![image-20201101102439199](C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201101102439199.png)
-
 There are two files that needs to be configured. odbcinst.ini and odbc.ini
 
 We can go and update the files in the installation folder under /etc/.. but let's just make changes in the default files that the client will look for, in case there are no settings configured in the installation folder.
@@ -283,10 +281,6 @@ To configure odbc.ini:
 ```shell
 sudo nano /etc/odbc.ini
 ```
-
-<img src="C:\Users\harini.palanisamy\AppData\Roaming\Typora\typora-user-images\image-20201101110328368.png" alt="image-20201101110328368" style="zoom: 67%;" />
-
-
 
 Enter the values as shown in the image. The value for driver should match the name you gave in the `odbcinst.ini` file. The value inside `[ ]` in this file is the DSN name. You can also set your username and password to connect to the database here.
 
