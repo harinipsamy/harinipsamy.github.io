@@ -335,8 +335,8 @@ jdbc_con = cx_Oracle.connect("username/password@hostname:port/databasename"
 
 Useful resources based on which this tutorial is constructed:
 
-Oracle's instant client download links based on OS: https://www.oracle.com/database/technologies/instant-client/downloads.html
+Oracle's instant client download links based on OS: [https://www.oracle.com/database/technologies/instant-client/downloads.html] (https://www.oracle.com/database/technologies/instant-client/downloads.html)
 
-Extra steps for ODBC client: https://www.oracle.com/database/technologies/releasenote-odbc-ic.html
+Extra steps for ODBC client: [https://www.oracle.com/database/technologies/releasenote-odbc-ic.html] (https://www.oracle.com/database/technologies/releasenote-odbc-ic.html)
 
-Oracle's detailed call interface documentation: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnoci/instant-client.html#GUID-AAB0378F-2C7B-41EB-ACAC-18DD5D052B01
+Oracle's detailed call interface documentation: [https://docs.oracle.com/en/database/oracle/oracle-database/19/lnoci/instant-client.html#GUID-AAB0378F-2C7B-41EB-ACAC-18DD5D052B01](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnoci/instant-client.html#GUID-AAB0378F-2C7B-41EB-ACAC-18DD5D052B01)
