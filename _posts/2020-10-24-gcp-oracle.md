@@ -30,11 +30,11 @@ If the Python installation is on the same machine as the database, a separate Or
 
 # What is an instant client?
 
-Oracle is a proprietary database does not offer open source API abilities and restricts Oracle cloud license: http://www.oracle.com/us/corporate/pricing/cloud-licensing-070579.pdf. The licensing document by Oracle does not list GCP as its authorized vendor, which means we won't be able to access the Oracle database with the click of a few buttons, or with API key and passcode. Although GCP does not support Oracle DB, it is still possible to access the Oracle database from a VM instance directly. It requires installation of a client to communicate to the Oracle driver to access the data. Instant client acts as the bridge between the third party platform (aka GCP instance) and the Oracle database. 
+Oracle is a proprietary database does not offer open source API abilities and restricts Oracle cloud license: [http://www.oracle.com/us/corporate/pricing/cloud-licensing-070579.pdf](http://www.oracle.com/us/corporate/pricing/cloud-licensing-070579.pdf). The licensing document by Oracle does not list GCP as its authorized vendor, which means we won't be able to access the Oracle database with the click of a few buttons, or with API key and passcode. Although GCP does not support Oracle DB, it is still possible to access the Oracle database from a VM instance directly. It requires installation of a client to communicate to the Oracle driver to access the data. Instant client acts as the bridge between the third party platform (aka GCP instance) and the Oracle database. 
 
 # Using JDBC instant client
 
-Installing instant client from: https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
+Installing instant client from: [https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
 
 Oracle provides rpm and zip files for installing the clients on a Linux system. Debian needs files to be in .deb format to install. There are three ways to tackle this:
 
@@ -52,7 +52,7 @@ Detailed instructions for each option above is given in step 3.
 
 Create a VM/notebook instance and ensure the firewall settings allow for connection to Oracle database.
 
-## Step1: Download the clients from https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
+## Step1: Download the clients from [https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
 
 ### a. Download zip / rpm files 
 
