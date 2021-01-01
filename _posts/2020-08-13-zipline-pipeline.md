@@ -9,6 +9,7 @@ tags:
    - Stock market
 ---
 
+
 Zipline is an open source trading simulator by Quantopian. It can be used to backtest financial models offline. 
 
 It is built on python dataframes so it is easy to integrate with the existing python libraries.
