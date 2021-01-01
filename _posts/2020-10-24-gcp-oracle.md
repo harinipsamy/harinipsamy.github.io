@@ -9,7 +9,6 @@ tags:
   - Python
 ---
 
-
 Google's cloud platform is great for scaling infrastructure and it makes computing and building models so much easier. Data can be easily loaded onto compute instances from Google's BigQuery using python libraries. But what happens when you don't have the data stored in Google Cloud, but in another server? In this post, I am gonna walk through the steps to install the drivers necessary to be able to directly pull data from an Oracle database in using python libraries.
 
 # VM Instances set-up
