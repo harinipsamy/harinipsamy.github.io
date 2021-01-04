@@ -1,0 +1,81 @@
+---
+title: writing efficient sql queries
+
+---
+
+
+performance issues can occur in:
+
+WHERE, INNER JOIN OR LEFT JOIN, HAVING
+
+DISTINCT is a clause that you should definitely try to avoid if you can. As you have read in other examples, the execution time only increases if you add this clause to your query. It’s therefore always a good idea to consider whether you really need this DISTINCT operation to take place to get the results that you want to accomplish.
+
+
+The LIKE Operator
+When you use the LIKE operator in a query, the index isn’t used if the pattern starts with % or _. It will prevent the database from using an index (if it exists). Of course, from another point of view, you could also argue that this type of query potentially leaves the door open to retrieve too many records that don’t necessarily satisfy your query goal.
+
+Once again, your knowledge of the data that is stored in the database can help you to formulate a pattern that will filter correctly through all the data to find only the rows that really matter for your query.
+
+
+when you add data type conversion to your query, you only increase the execution time.
+
+index is a data structure that improves the speed of the data retrieval in your database table, but it comes at a cost: there will be additional writes, and additional storage space is needed to maintain the index data structure. Indexes are used to quickly locate or look up data without having to search every row in a database every time the database table is accessed. Indexes can be created by using one or more columns in a database table
+OR,AND, NOT, ANY, ALL -> don't use index
+Instead of OR, use IN:
+```sql
+SELECT driverslicensenr, name
+FROM Drivers
+WHERE driverslicensenr = 123456
+OR driverslicensenr = 678910
+OR driverslicensenr = 345678;
+```
+
+```sql
+SELECT driverslicensenr, name
+FROM Drivers
+WHERE driverslicensenr IN (123456, 678910, 345678);
+```
+
+you need to be careful not to unnecessarily use the UNION operation because you go through the same table multiple times. At the same time, you have to realize that when you use a UNION in your query, the execution time will increase. Alternatives to the UNION operation are: reformulating the query in such a way that all conditions are placed in one SELECT instruction, or using an OUTER JOIN instead of UNION.
+
+instead of AND, use BETWEEN 
+instead of ANY/ALL, use MIN/MAX
+
+
+all aggregation functions like SUM, AVG, MIN, MAX over many rows can result in a long-running query. In such cases, you can try to either minimize the number of rows to handle or pre-calculate these values. 
+
+
+
+one table is considerably larger than the other one, you might want to rewrite your query so that the biggest table is placed last in the join.
+
+
+The HAVING clause was initially added to SQL because the WHERE keyword could not be used with aggregate functions. HAVING is typically used with the GROUP BY clause to restrict the groups of returned rows to only those that meet certain conditions. However, if you use this clause in your query, the index is not used
+
+
+he difference between these two clauses lies in the fact that the WHERE clause introduces a condition on individual rows, while the HAVING clause introduces a condition on aggregations or results of a selection where a single result, such as MIN, MAX, SUM,… has been produced from multiple rows.
+
+
+provide you with a textual description of the query plan. One example is the EXPLAIN PLAN statement in Oracle,
+
+Replace unnecessary large-table full table scans with index scans;
+Make sure that you’re applying the optimal table join order;
+Make sure that you’re using the indexes optimally; And
+Cache small-table full table scans.
+
+
+to select top n %:
+SELECT TOP 50 PERCENT *
+
+
+EXISTS clause 
+EXISTS vs INNER JOIN
+writing sql code w/ subqueries
+look at all columns in a table?
+
+self join:
+to join two rows into one row. example: 
+table: employee ID, first name, last name, supervisor ID; supervisor id is the employee id of the employee's supervisor
+get: supervisor's name and last name also in the same row as employee
+query: select e1.employee id, e1.first name, e1. last name, e1.supervisor_id, e2.first name as supervisor name
+       from employee e1
+       join employee e2 on e1.supervisor_id = e2.employee_id
