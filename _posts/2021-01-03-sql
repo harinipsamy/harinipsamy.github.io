@@ -54,6 +54,9 @@ The HAVING clause was initially added to SQL because the WHERE keyword could not
 
 he difference between these two clauses lies in the fact that the WHERE clause introduces a condition on individual rows, while the HAVING clause introduces a condition on aggregations or results of a selection where a single result, such as MIN, MAX, SUM,… has been produced from multiple rows.
 
+Avoid Wildcard Characters at the beginning of a LIKE clause pattern
+Use INNER JOIN instead of WHERE clause for creating joins
+
 
 provide you with a textual description of the query plan. One example is the EXPLAIN PLAN statement in Oracle,
 
