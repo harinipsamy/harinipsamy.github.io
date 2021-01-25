@@ -4,6 +4,14 @@ title: writing efficient sql queries
 ---
 
 
+can't use like and in at the same time. use this instead
+
+with list as (select '%' || list_items || '%' names from table_name )
+select list_items_or_match_column from table_name join list on table_name.list_items_or_match_column like names
+
+
+
+
 performance issues can occur in:
 
 WHERE, INNER JOIN OR LEFT JOIN, HAVING
