@@ -1,0 +1,17 @@
+---
+title: Forking a repository and making changes to content
+
+---
+
+https://docs.github.com/en/github/getting-started-with-github/fork-a-repo
+1. fork by clicking fork icon
+2. in CLI, git clone github.com/my-username/repo-name
+3. config to pull changes from original into local clone. 
+git remote add upstream https://github.com/author's-username/repo-name
+4. synching fork - keeping it upto date on changes from the original repo
+git fetch upsteam
+git merge upstream/master
+5.  push changes to github - my fork
+git push origin master
+to main repo
+git push upstream master (??)
