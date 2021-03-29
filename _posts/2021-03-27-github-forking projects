@@ -25,4 +25,10 @@ git push upstream master (??)
 1. create conda env
 2. activate env
 3. conda env update --name env_name --file yml_file_to_install_dependencies
+This didn't work. atari-py installation failed. requires python3.6,but yml file states python= 3.8.
+was able to install atari-py and gym after reinstalling python=3.6, installing cmake and then installing gym and atari-py using pip
+
+
 2. install jupyter notebook, ipykernel, 
+
+
