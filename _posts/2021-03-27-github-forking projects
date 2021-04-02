@@ -16,6 +16,9 @@ git push origin master
 to main repo
 git push upstream master (??)
 
+# to revert to a version on the main repo:
+git checkout . # all files
+git checkout file-name 
 
 
 
