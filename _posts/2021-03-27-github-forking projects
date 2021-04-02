@@ -58,9 +58,11 @@ push .md to branch
 
 # to show output in md file:
 1. conver py to ipynb
+jupytext --set-formats ipynb,py --execute file-name.py
 2. jupyter nbconvert file-name.ipynb --to markdown
 
 
+https://jupytext.readthedocs.io/en/latest/config.html#configuring-paired-notebooks-globally
 
-
-
+# argparse: default-> parse empty string ("")
+#for loop in cli for applying cmd to all files
