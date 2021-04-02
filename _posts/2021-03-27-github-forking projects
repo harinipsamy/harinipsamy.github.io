@@ -30,8 +30,37 @@ git checkout file-name
 3. conda env update --name env_name --file yml_file_to_install_dependencies
 This didn't work. atari-py installation failed. requires python3.6,but yml file states python= 3.8.
 was able to install atari-py and gym after reinstalling python=3.6, installing cmake and then installing gym and atari-py using pip
-
+Had to install matplotlib, tensorflow, fire, seaborn separately
 
 2. install jupyter notebook, ipykernel, 
+
+
+
+# creating .md file with outputs
+
+1. install jupytext
+2. open .py file in jupyter notebook
+3. file -> typytext -> pair with markdown
+4. save file
+5. open the .md file saved. run all
+
+# Automating this through cli
+.md can be executed, but it doesn't store output. so we can pair the .py to a .ipynb instead to preserve output, and then maybe convert to .md
+
+1. jupytext --set-formats ipynb,py --execute file-name.py # use *.py to pair and execute all .py files in the folder
+what happens when you pair ipynb to md? #No need to execute it. pairing md to ipynb automatically retains the outputs
+
+2. jupytext --set-formats md,ipynb file-name.py
+
+
+push .md to branch
+
+
+# to show output in md file:
+1. conver py to ipynb
+2. jupyter nbconvert file-name.ipynb --to markdown
+
+
+
 
 
