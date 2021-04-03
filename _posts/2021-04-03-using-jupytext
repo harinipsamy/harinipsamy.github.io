@@ -1,0 +1,20 @@
+---
+title: Using Jupytext to seemlessly convert scripts
+tags: - github
+      - jupytext
+      - jupyter
+      - python
+---
+
+# What's Jupytext?
+Jupytext is a python package to convert jupyter notebooks to scripts or text files like markdown formatted files. 
+It is a plugin for Jupyter and lets us save notebooks as markdown files or scripts.
+
+# How is it useful?
+
+When we are working with jupyter notebooks, version control can sometimes be difficult. Jupyter notebooks have output cells and each time the cells are rerun and there's a different output, git version control treats it as modification and shows it as diffs, even though there ware no changes in the underlying code. This can be circumvent by using text formatted files like markdown. Markdown can store the outputs and at the same time, it will not be reflected in the changes. 
+
+Jupytext is also useful when we want to work in multiple formats at the same time. For example, suppose when someone is developing coursework or codes for books, scripts can be written in .py, code in jupyter notebooks for easy step-by-step walk-through/tutorials and markdown for documentation. Having the same script in three formats, and not having to re-generate them everytime changes are made makes it easy to maintain code. This is made possible by pairing the files in different formats using Jupytext.
+
+Jupyter notebooks are hard to read using IDEs like PyCharm or Spyder. When we use Jupytext, we can edit them using IDEs
+
