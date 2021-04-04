@@ -18,3 +18,16 @@ Jupytext is also useful when we want to work in multiple formats at the same tim
 
 Jupyter notebooks are hard to read using IDEs like PyCharm or Spyder. When we use Jupytext, we can edit them using IDEs
 
+# Different ways to use Jupytext
+
+## From Jupyter or jupyter Lab
+
+## As a python package
+
+## In commandline
+
+
+
+
+Resources:
+https://jupytext.readthedocs.io/en/latest/index.html[https://jupytext.readthedocs.io/en/latest/index.html]
