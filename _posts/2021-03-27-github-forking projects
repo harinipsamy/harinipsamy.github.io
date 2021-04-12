@@ -66,7 +66,7 @@ https://jupytext.readthedocs.io/en/latest/config.html#configuring-paired-noteboo
 
 # converting all files in cli
 1. for fname in `find . -name "[0-9]*.py"`;do jupytext --set-formats ipynb,py --execute $fname; done;
-2. jupyter nbconvert file-name.ipynb --to markdown
+2. for fname in `find . -name "[0-9]*.ipynb"`;do jupyter nbconvert $fname --to markdown; done;
 
 
 # argparse: default-> parse empty string ("")
