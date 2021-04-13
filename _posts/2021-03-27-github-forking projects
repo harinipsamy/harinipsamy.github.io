@@ -69,8 +69,16 @@ https://jupytext.readthedocs.io/en/latest/config.html#configuring-paired-noteboo
 2. for fname in `find . -name "[0-9]*.ipynb"`;do jupyter nbconvert $fname --to markdown; done;
 
 
+
 # argparse: default-> parse empty string ("")
 #for loop in cli for applying cmd to all files
+
+
+## creating CI/cd pipeline to automate pairing .py with .ipynb and .md files everytime there's a push to the master branch
+
+1. actions -> create workflow; or mkdir .github/workflows/ in terminal
+2. what should be run in the pipeleine?
+Get code from master file, run script, push generated file to a different branch. 
 
 
 
