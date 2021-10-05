@@ -15,3 +15,8 @@ Formula
 How to go about estimating - what do we need to estimate ci 
 
 incorp into the model
+## General formula
+
+CI (min and max bound)= x' +- z (s/sqrt(n))
+
+Test bootstrap method. 
