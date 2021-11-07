@@ -36,12 +36,14 @@ treated markets sales from tm to t0.
 
 calculate weights of each market (1-3) using sci.optimize.minimize. Apply this weight for calculating base-line sales from treatment period. 
 
-# What's needed further
+# Next steps - calculating confidence interval
 
 a lower and upper bound based on confidence interval for each prediction point. 
 
 for example, if predicted baseline sales for tm = 15, and based on CI, the sale can be ~+-5, then we need to show 2 dotted lines the lower bound will be at 15-5 = 10 and 
 upper bound will be at 15+5 = 20. This should be calculated for each time period till t0.
+
+output is one set of weight. to calculate sales, we multiply weights by sales for each time period before and after treatment.
 
 
 
