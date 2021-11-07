@@ -18,8 +18,9 @@ there was no treatment. actual sales in the treated market/entity minus calculat
 Inputs: y values for each time period in similar locations
 
 |market |period   |  orders|
-|1     |  1 (Jun 1)| 12|
-|2       |1| (Jun 1) 14|
+|-------|:--------|-------:|
+|1      |1 (Jun 1)|      12|
+|2      |1(Jun 1) |      14|
 3       1 (Jun 1) 17|
 1       2 (Jun 2) 9|
 2       2 (Jun 2) 6|
