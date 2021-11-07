@@ -21,13 +21,13 @@ Inputs: y values for each time period in similar locations
 |-------|:--------|-------:|
 |1      |1 (Jun 1)|      12|
 |2      |1(Jun 1) |      14|
-3       1 (Jun 1) 17|
-1       2 (Jun 2) 9|
-2       2 (Jun 2) 6|
-3       2 (Jun 2) 12|
-1       3 (Jun 3) 9|
-2       3 (Jun 3) 6|
-3       3 (Jun 3) 12|
+|3      | 1 (Jun 1) |17|
+|1      | 2 (Jun 2) |9|
+|2     |  2 (Jun 2) |6|
+|3    |   2 (Jun 2) |12|
+|1   |    3 (Jun 3) |9|
+|2  |     3 (Jun 3) |6|
+|3 |      3 (Jun 3) |12|
 
 Given 3 locations that has similar characteristics, predict base line sales for 4th location from time tm (treatment start period) till time t0.
 Caculate weights of each similar market to minimize distance from treated market's sales, using data from tn to tm. using this weight, calculate 
